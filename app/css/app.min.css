@@ -1,0 +1,9 @@
+body {
+  display: -ms-grid;
+  display: grid;
+  font-size: 11px;
+  width: 100%;
+  background: #00f;
+  height: 505px;
+  color: orange
+}
