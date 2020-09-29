@@ -5,14 +5,163 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Edgar Balsis">
+    <meta name="description" content="The MDN Web Docs site
+  provides information about Open Web technologies
+  including HTML, CSS, and APIs for both Web sites and
+  progressive web apps.">
     <title>Document</title>
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
-<p>Hello, yeah</p>
-<p>Hello there</p>
-<p>Hello, I'm making changes in feature branch so I can add it then to master branch</p>
-<img src="img/dest/stock-photo-large-beautiful-drops-of-transparent-rain-water-on-a-green-leaf-macro-drops-of-dew-in-the-morning-668593321.jpg" alt="">
+
+<header>
+    <a href="table.html">Try tables</a>
+</header>
+<nav>
+    Some navigational menu
+</nav>
+<main>
+    <section>
+        <!-- Section should contain a heading, does not require <header> element -->
+        <h1>The main title</h1>
+        <article>
+            <header>
+                The title of the article
+                <!-- Description list-->
+                <dl>
+                    <dt>soliloquy</dt>
+                    <dd>In drama, where a character speaks to themselves, representing their inner thoughts or feelings
+                        and
+                        in the process relaying them to the audience (but not to other characters.)
+                    </dd>
+                    <dt>monologue</dt>
+                    <dd>In drama, where a character speaks their thoughts out loud to share them with the audience and
+                        any
+                        other characters present.
+                    </dd>
+                    <dt>aside</dt>
+                    <dd>In drama, where a character shares a comment only with the audience for humorous or dramatic
+                        effect.
+                        This is usually a feeling, thought, or piece of additional background information.
+                    </dd>
+                </dl>
+            </header>
+            <section>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" name="user_name">
+                        </li>
+                        <li>
+                            <label for="mail">E-mail: </label>
+                            <input type="email" id="mail" name="user_email">
+                        </li>
+                        <li>
+                            <label for="msg">Message: </label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send your message</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+            <footer>
+                The footer of the article
+            </footer>
+        </article>
+        <aside>
+            <p>Side information</p>
+            <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+               download="firefox-latest-installer.exe">
+                Download Latest Firefox for Windows (64-bit) (English, US)
+            </a>
+            <hr>
+            <a href="mailto:edgarbalsis94@gmail.com">Send email to Edgar</a>
+            <hr>
+            <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+                Send mail with cc, bcc, subject and body
+            </a>
+        </aside>
+    </section>
+
+    <!--Blockquote-->
+    <section>
+        <p>Here below is a blockquote...</p>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+            <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+                Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+        </blockquote>
+    </section>
+    <!-- Blockquote inline for short one   -->
+    <section>
+        <p>The quote element — <code>&lt;q&gt;</code> — is <q
+                cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended
+            for short quotations that don't require paragraph breaks.</q></p>
+
+        <!--Abbreviations with <abbr> -->
+        <section>
+            <p>We use <abbr title="Hypertext Markup Language">HTML</abbr> to structure our web documents.</p>
+        </section>
+
+        <!--  Supercripts and subscripts      -->
+        <section>
+            <p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+            <p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+            <p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+        </section>
+
+        <section>
+        <pre><code>var para = document.querySelector('p');
+para.onclick = function() {
+  alert('Owww, stop poking me!');
+}</code></pre>
+        </section>
+
+    </section>
+    <!-- SVG  -->
+    <section>
+        <!-- First way / can't manipulate with JS, to css control it need inline styling       -->
+        <img
+            src="svg-picture.svg"
+            alt="I'm trying svg"
+            height="500px"
+            width="500px"
+        />
+        <!-- Second way / using only in one place, can be problems with page loading, can manipulate
+              with css and JS though -->
+        <svg width="300" height="200">
+            <rect width="500px" height="500px" fill="green" />
+        </svg>
+    </section>
+</main>
+<footer>
+    <!-- Frame for embedding documents, external videos inside page   -->
+    <iframe src="https://www.youtube.com/embed/RGOj5yH7evk"
+            width="100%" height="500" frameborder="0"
+            allowfullscreen>
+        <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary">
+                Fallback link for browsers that don't support iframes
+            </a>
+        </p>
+    </iframe>
+</footer>
+
+<!--Script for create iframe the last element so DOM could load before-->
+<script type='text/javascript'>
+    let frameLoad = () => {
+        let frameElement = document.createElement("iframe");
+        frameElement.setAttribute("src", "https://www.youtube.com/embed/eLxaJwcdMYg");
+        // frameElement.setAttribute("sandbox", "");
+        frameElement.style.width = "100%";
+        frameElement.style.height = "500px";
+        document.body.appendChild(frameElement);
+    };
+    frameLoad();
+</script>
 <script src="js/app.min.js"></script>
 </body>
 </html>
