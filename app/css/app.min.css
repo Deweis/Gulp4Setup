@@ -3,7 +3,26 @@ body {
   display: grid;
   font-size: 11px;
   width: 100%;
-  background: #00f;
   height: 505px;
-  color: orange
+  color: #000
+}
+nav {
+  color: green;
+  font-size: 50px
+}
+nav .class-1 {
+  color: inherit
+}
+nav .class-2 {
+  color: initial
+}
+nav .class-3 {
+  color: unset
+}
+.all-property {
+  border: 1px solid #000;
+  background: #ff0
+}
+.fix-this {
+  all: unset
 }
