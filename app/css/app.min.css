@@ -1,3 +1,7 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
 body {
   display: -ms-grid;
   display: grid;
@@ -25,4 +29,8 @@ nav .class-3 {
 }
 .fix-this {
   all: unset
+}
+.box {
+  background: -o-linear-gradient(345deg,rgba(255,255,255,.2) 39%,#333839 96%) center center/400px 200px no-repeat,url(big-star.png) center no-repeat,#663399;
+  background: linear-gradient(105deg,rgba(255,255,255,.2) 39%,#333839 96%) center center/400px 200px no-repeat,url(big-star.png) center no-repeat,#663399
 }
