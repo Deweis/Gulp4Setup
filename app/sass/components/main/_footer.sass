@@ -1,0 +1,153 @@
+.footer
+  .container--black
+    background-color: #1A1A1A
+    color: #fff
+    position: relative
+
+  a
+    cursor: pointer
+    position: relative
+    z-index: 10
+.container-curve
+  padding-bottom: 128px
+  width: 1920px
+  position: relative
+  margin: 0 auto
+.footer__contacts
+  padding-left: 97px
+  padding-right: 67px
+  padding-bottom: 46px
+  //margin-bottom: 128px
+.contacts__menu
+  display: flex
+  padding-top: 89px
+  padding-bottom: 44px
+  position: relative
+  &:after
+    @include pseudo()
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 98.3%
+    height: 1px
+    background: #363636
+
+.contacts__item
+  padding-left: 81px
+  position: relative
+  &:first-child
+    margin-right: 113px
+  &:nth-child(2)
+    margin-right: 110px
+  &:nth-child(3)
+    margin-right: 119px
+  &:nth-child(4)
+    margin-right: 65px
+    margin-top: 35px
+  &:nth-child(5)
+    margin-top: 34px
+  &:last-child
+    display: none
+  &:first-child, &:nth-child(2), &:nth-child(3)
+    &:before
+      @include pseudo()
+      position: absolute
+      height: 3px
+      width: 39px
+      background-color: $orange
+      left: 3px
+      top: 17%
+  &:nth-child(4), &:nth-child(5)
+    @include bg(34px,17px,"/img/dest/motionfilm-polygon3.png")
+.contacts__title
+  display: block
+  font-size: $f30
+  font-family: $PoppinsSB
+.contacts__text
+  margin-top: 29px
+  display: block
+  opacity: 0.53
+  &:hover
+    opacity: 0.4
+.contacts__email,.contacts__phone
+  font-size: 20px
+  opacity: 0.53
+  display: block
+  &:hover
+    opacity: 0.4
+.contacts__email
+  margin-top: 23px
+.contacts__phone
+  margin-top: 20px
+.contacts__submenu
+  padding-top: 48px
+  padding-left: 18px
+  display: flex
+  justify-content: space-between
+  font-size: 18px
+  position: relative
+  z-index: 11
+.contacts__list
+  opacity: 0.29
+  display: flex
+.contacts__list-item
+  margin-right: 49px
+.contacts__list-item
+  &:nth-child(2)
+    margin-right: 59px
+.contacts__list-link
+  &:hover
+    opacity: 0.6
+.contacts__copyright
+  margin-right: 43px
+.contacts__copyright--media
+  display: none
+.contacts__announcement
+  margin-top: 20px
+  margin-right: 198px
+  display: flex
+  justify-content: space-between
+  font-size: 18px
+.contacts__annoucement-item
+  padding-left: 91px
+  padding-top: 46.5px
+  padding-bottom: 15px
+.contacts__annoucement-android
+  @include bg(17px,31px,"/img/dest/motionfilm-android.png")
+.contacts__annoucement-iphone
+  @include bg(17px,31px,"/img/dest/motionfilm-apple.png")
+.contacts__announcement__reg
+  opacity: 0.4
+.contacts__announcement__strong
+  opacity: 1
+.contacts__social
+  margin-top: 115px
+  text-align: center
+  margin-left: -33px
+
+.contacts__social-link
+  transition: 0.4s
+  &:hover
+    opacity: 0.6
+.contacts__icon-facebook,.contacts__icon-instagram
+  margin-right: 27px
+.footer__text
+  color: #505A76
+  font-size: 18px
+.footer__ps
+  padding-left: 80px
+  padding-right: 76px
+  line-height: 40px
+.footer__text
+  padding-left: 60px
+  @include bg(15px,10px,"/img/dest/motionfilm-star-icon.png")
+  margin-bottom: 70px
+  &:nth-child(5)
+    margin-bottom: 80px
+.footer-curve
+  position: absolute
+  top: 76px
+  left: 18%
+  z-index: 9
+  width: 804px
+  height: 749px
