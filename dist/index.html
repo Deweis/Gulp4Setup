@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Motionfilm - invest in commercial Film Project</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/app.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -46,7 +47,7 @@
                 <nav>
                     <ul class="header__menu">
                         <li class="header__item">
-                            <a href="#" class="header__link header__link--is-active">Home</a>
+                            <a href="index.html" class="header__link header__link--is-active">Home</a>
                         </li>
                         <li class="header__item">
                             <a href="#" class="header__link">Why Raise</a>
@@ -55,7 +56,7 @@
                             <a href="#" class="header__link">Why Invest</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">How It Work</a>
+                            <a href="how-works.html" class="header__link">How It Work</a>
                         </li>
                     </ul>
                 </nav>
@@ -67,7 +68,8 @@
             </div>
         </div>
 
-        <img src="/img/dest/motionfilm-header.png"  alt="Motionfilm header image" loading="eager" class="header__mobile-img"
+        <img src="/img/dest/motionfilm-header.png" alt="Motionfilm header image" loading="eager"
+             class="header__mobile-img"
              data-aos="fade-right"
              data-aos-duration="1800">
         <h1 class="header__title"
@@ -903,7 +905,8 @@
             </div>
 
             <div class="questions__tabs tabs">
-                <div class="tabs__item tabs__item--active accordion"
+                <div class="tabs__item tabs__item--active accordion tabs__item--first"
+                     data-tab="one"
                      data-aos="fade-right"
                      data-aos-duration="900"
                      data-aos-delay="300">
@@ -917,7 +920,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="tabs__item accordion"
+                <div class="tabs__item accordion tabs__item--first"
+                     data-tab="one"
                      data-aos="fade-left"
                      data-aos-duration="900"
                      data-aos-delay="500">
@@ -925,42 +929,43 @@
                         <h3 class="tabs__title">How much can I invest?
                         </h3>
                         <p class="tabs__text">
-                            Motion Film is a one stop access to the entire spectrum of Entertainment Finance Investment
-                            portfolio to proactively access
-                            Entertainment Projects in a transparent manner with algorithm driven deployment and success
-                            tracking.
+                            You can invest within the range specified as the minimum and maximum amount for the project
+                            selected.
+                            Investment amount is generally set up for each project. However, Motion Film’s platform wide
+                            minimum investment amount is $10.
                         </p>
                     </div>
                 </div>
-                <div class="tabs__item accordion"
+                <div class="tabs__item accordion tabs__item--first"
+                     data-tab="one"
                      data-aos="fade-right"
                      data-aos-duration="900"
                      data-aos-delay="700">
                     <div class="panel">
                         <h3 class="tabs__title">Can I resell my securities?</h3>
                         <p class="tabs__text">
-                            Motion Film is a one stop access to the entire spectrum of Entertainment Finance Investment
-                            portfolio to proactively access
-                            Entertainment Projects in a transparent manner with algorithm driven deployment and success
-                            tracking.
+                            Yes, the securities can be freely sold and transferred anytime through the platform to any
+                            other MotionFilm Investor. There shall be no lock in.
                         </p>
                     </div>
                 </div>
-                <div class="tabs__item accordion"
+                <div class="tabs__item accordion tabs__item--first"
+                     data-tab="one"
                      data-aos="fade-left"
                      data-aos-duration="900"
                      data-aos-delay="900">
                     <div class="panel">
                         <h3 class="tabs__title">Can the MotionFilm reject my investment?</h3>
                         <p class="tabs__text">
-                            Motion Film is a one stop access to the entire spectrum of Entertainment Finance Investment
-                            portfolio to proactively access
-                            Entertainment Projects in a transparent manner with algorithm driven deployment and success
-                            tracking.
+                            MotionFilm shall reject your investment in the following scenarios:
+                            If your KYC details are not provided
+                            You have invested below the minimum investment amount or more than the maximum amount
+                            allowed under the respective project
                         </p>
                     </div>
                 </div>
-                <div class="tabs__item accordion"
+                <div class="tabs__item accordion tabs__item--first"
+                     data-tab="one"
                      data-aos="fade-right"
                      data-aos-duration="900"
                      data-aos-delay="1100">
@@ -968,20 +973,274 @@
                         <h3 class="tabs__title">Can I cancel my investment?
                         </h3>
                         <p class="tabs__text">
-                            Motion Film is a one stop access to the entire spectrum of Entertainment Finance Investment
-                            portfolio to proactively access
-                            Entertainment Projects in a transparent manner with algorithm driven deployment and success
-                            tracking.
+                            Investment once done cannot be cancelled, however, you may sell / transfer your securities
+                            to other MotionFilm Investors anytime once allotted.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tabs__item accordion tabs__item--2nd tabs__item--active"
+                     data-tab="two"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">What is the minimum investment amount?
+                        </h3>
+                        <p class="tabs__text">
+                            Each project sets their own minimum investment amount. MotionFilm’s platform-wide minimum is
+                            $10,
+                            however most Project select somewhere between $50 and $250.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--2nd"
+                     data-tab="two"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">Can I invest through my LLC/Trust/IRA/Self-Directed IRA?
+                        </h3>
+                        <p class="tabs__text">
+                            Yes, if you have a self-directed IRA, a revocable trust that you are the trustee for,
+                            the owner / manager of an LLC or in a position to direct a corporation's monies,
+                            you can register your entity in your investor settings with MotionFilm
+                            and invest through it. However, you shall be solely responsible for complying with
+                            the laws of the country in which your entity is established including but not limited
+                            to the taxation and the international laws.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--2nd"
+                     data-tab="two"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">Who can invest?
+                        </h3>
+                        <p class="tabs__text">
+                            Anyone 18 years or older can invest.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--2nd"
+                     data-tab="two"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">How can I check that my return is appropriate?
+                        </h3>
+                        <p class="tabs__text">
+                            Every project has a huge financial dashboard. You can see the return by city,
+                            state or country.There is also you can see contracts of third parties like Netflix,
+                            Amazon Prime, or satellite rights.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--2nd"
+                     data-tab="two"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">What if I have a question about my return?
+                        </h3>
+                        <p class="tabs__text">
+                            You can call our officer or can write email to the concerned department.
+                            Your problem will be solved within business days.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tabs__item accordion tabs__item--3rd tabs__item--active"
+                     data-tab="three"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">How often can I claim my return?
+                        </h3>
+                        <p class="tabs__text">
+                            There is no limit.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--3rd"
+                     data-tab="three"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">Does MotionFilm allow international investors?
+                        </h3>
+                        <p class="tabs__text">
+                            Investment from international investors is acceptable, however, we shall not be responsible
+                            for their compliances and they have to ensure that they adhere to the laws of their country.
+
+                            What types of documents I can use to verify my identity?
+
+                            For Indian individuals
+
+                            Any government issued photo ID, including:
+                            Aadhar Card
+                            Pan Card
+                            Driver's license
+                            Passport
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--3rd"
+                     data-tab="three"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">For foreign individuals
+                        </h3>
+                        <p class="tabs__text">
+                            Passport
+                            For address verification
+                            A scan of a mail item, bank statement or utility bill
+                            Dated within the last 90 days
+                            Showing your name and your full address, as it appears in your investor profile
+                            Taxpayer identification number (for U.S. persons), or one or more of the following: a
+                            taxpayer identification number, Social Security number and identification card
+
+                            Can I invest in more than one project?
+                            Yes.
+
+                            Are you accepting cryptocurrency?
+                            No, we are not accepting any cryptocurrency.
+
+                            I am Indian, can I invest in an international or Hollywood project?
+
+                            Yes.
+
+                            How can I measure whether the project is eligible or worthy for investment?
+
+                            First of all MotionFilm only selects commercial, studio quality and serious projects and it
+                            takes a very long process for finalyse project.That process gives you a filtered project and
+                            thus reduces the risk of investment.
+                            We provide a rating rank system for every project, which helps you to select the project for
+                            the right investment.
+                            Also you can see synopsis of the story,Graphic details of the project,Director of the
+                            project,Star cast,crew members, production company,distribution company, similar projects
+                            and streaming or partnership contract if available.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--3rd"
+                     data-tab="three"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">What is the backup budget?
+                        </h3>
+                        <p class="tabs__text">
+                            Studio quality film projects are highly budget and sensitive. No one can estimate the exact
+                            budget of the project and sometimes unexpected things happen during the production of the
+                            project.In that case backup budget helps to deliver successful projects in the right time.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--3rd"
+                     data-tab="three"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">How does the Backup budget work ?
+                        </h3>
+                        <p class="tabs__text">
+                            When the project requires additional funds, the producers of that project apply and explain
+                            the situation to access that fund.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tabs__item accordion tabs__item--4th tabs__item--active"
+                     data-tab="four"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">Can I Invest in a Backup Budget ?
+                        </h3>
+                        <p class="tabs__text">
+                            Yes everyone can, But your investment will be considered as a backup.It will be used only
+                            when the project requires additional funds otherwise the investment will return on the
+                            project release date.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--4th"
+                     data-tab="four"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">Why should I invest in a backup budget?
+                        </h3>
+                        <p class="tabs__text">
+                            According to the basic contract those who have invested in the backup budget will receive an
+                            extra percentage of revenue rather than the main Budget.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--4th"
+                     data-tab="four"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">Can I sell my backup budget token ?
+                        </h3>
+                        <p class="tabs__text">
+                            Yes, you can sell backup budget tokens.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--4th"
+                     data-tab="four"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">What is the contract in MotionFilm ?
+                        </h3>
+                        <p class="tabs__text">
+                            It is mandatory for every investor to read and sign the contract before investing.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs__item accordion tabs__item--4th"
+                     data-tab="four"
+                     data-aos="fade-right"
+                     data-aos-duration="900"
+                     data-aos-delay="1100">
+                    <div class="panel">
+                        <h3 class="tabs__title">What does it mean That MotionFilm is a co-investor ?
+                        </h3>
+                        <p class="tabs__text">
+                            MotionFilm invests in every project before releasing it platform for general investors.
+                            MotionFilm invest at-least 20% of the project’s main budget in development and
+                            pre-production.
+
                         </p>
                     </div>
                 </div>
                 <div class="questions__pagination pagination"
                      data-aos="slide-down"
                      data-aos-duration="2000">
-                    <span class="pagination__item pagination__item--active">1</span>
-                    <span class="pagination__item">2</span>
-                    <span class="pagination__item">3</span>
-                    <span class="pagination__item">4</span>
+                    <span class="pagination__item pagination__item--active pagination__item--first"
+                          data-tab="one">1</span>
+                    <span class="pagination__item pagination__item--second" data-tab="two">2</span>
+                    <span class="pagination__item pagination__item--third" data-tab="three">3</span>
+                    <span class="pagination__item pagination__item--fourth" data-tab="four">4</span>
                 </div>
             </div>
 
@@ -1231,7 +1490,7 @@
                 <a href="#" class="modal__google">Signup With Google</a>
                 <a href="#" class="modal__mobile-signup">Or signup with mobile number</a>
                 <input type="email" name="email" id="email" class="modal__input modal__email"
-                placeholder="Email">
+                       placeholder="Email">
                 <div class="modal__phone-wrap">
                     <select type="text" name="code" id="code" class="modal__phone-code">
                         <option value="india">India (+91)</option>
@@ -1240,7 +1499,7 @@
                         <option value="india">India (+95)</option>
                     </select>
                     <input type="text" name="phone" id="phone" class="modal__number modal__input"
-                    placeholder="Mobile Number">
+                           placeholder="Mobile Number">
                 </div>
                 <div class="modal__password-block">
                     <input type="text" name="password" id="password" class="modal__password modal__input"
@@ -1263,7 +1522,8 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init({
-        once: true
+        once: true,
+        disable: true
     });
 </script>
 <script src="js/app.min.js"></script>

@@ -3,6 +3,9 @@ $(document).ready(function () {
         $(this).toggleClass('tabs__item--active');
     });
     $('.pagination__item').click(function () {
+        let dataTab = $(this).attr("data-tab");
+        $('.tabs__item').css('display','none');
+        $('.tabs__item[data-tab="' + dataTab + '"]').css('display','block');
         $(this).parent().children().removeClass('pagination__item--active')
         $(this).addClass('pagination__item--active');
     });
@@ -58,8 +61,8 @@ $(document).ready(function () {
     $('.modal__tab').click(function () {
         $('.modal__tab').removeClass('modal__tab--active')
         $(this).toggleClass('modal__tab--active')
-
     })
+
 })
 
 

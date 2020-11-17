@@ -74,7 +74,7 @@
     cursor: pointer
 .tabs__item--active
   background-color: #fff
-  height: 329px
+  height: auto
   border: 2px solid rgba(180, 195, 224, 0.41)
   background-image: url("/img/dest/motionfilm-exit-button.png")
   background-position: 96.5% 16.5%
@@ -84,7 +84,10 @@
     margin-bottom: 63px
   &:hover
     opacity: 1
-
+.tabs__item[data-tab="two"],
+.tabs__item[data-tab="three"],
+.tabs__item[data-tab="four"]
+  display: none
 .tabs__title
   @include font($PoppinsSB, $f38, #505A76)
 .tabs__text
