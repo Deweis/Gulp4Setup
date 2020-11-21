@@ -16,6 +16,9 @@
   .terms__checkmark
     height: 30px
     width: 32px
+  .header__caption
+    transform: scale(0.8)
+    left: -154px
 
   .introduction__img-block
     height: 680px
@@ -221,10 +224,6 @@
     padding-right: 64px
 
 
-  .tabs__item
-    padding: 52px 20px 40px 45px
-
-
   .ad__subtitle
     width: 65%
   .ad__img-wrap
@@ -255,7 +254,7 @@
   .footer-curve
     width: 585px
     height: 544px
-    top: 28%
+    top: 35%
     left: 19%
 
 @media (max-width: 1440px)
@@ -265,7 +264,6 @@
     width: 100%
   .container-curve,.container
     width: 1280px
-
   header
     padding-bottom: 99px
   .header__act-link
@@ -457,6 +455,7 @@
     width: 190px
     height: 74px
     left: -136px
+    transform: scale(0.8)
   .header__caption-icon1
     width: 33px
     height: 49px
@@ -738,6 +737,8 @@
     margin-top: 51px
     margin-left: 120px
     margin-right: 120px
+  .tabs__title
+    padding-right: 20px
   .tabs__item
     height: 139px
   .tabs__item--active
@@ -786,20 +787,21 @@
     grid-area: company
   .contacts__item:nth-child(4)
     grid-area: how
+  .contacts__item:nth-child(5)
+    grid-area: contact
   .contacts__item:last-child
     display: block
     grid-area: copyrights
-    width: 50%
   .contacts__email, .contacts__phone
     font-size: inherit
   .contacts__copyright--media
     display: block
-    font-size: 16px
+    font-size: 14px
     padding-top: 112px
   .contacts__copyright--main
     display: none
   .footer-curve
-    top: 43%
+    top: 50%
     left: 18%
     width: 494px
     height: 442px
@@ -880,18 +882,19 @@
     cursor: pointer
     z-index: 6
     position: relative
+
   .bar1, .bar2, .bar3
-    width: 35px
-    height: 5px
+    width: 25px
+    height: 3px
+    margin: 4px 0
     background-color: #333
-    margin: 6px 0
     transition: 0.4s
   .change .bar1
-    transform: rotate(-45deg) translate(-9px, 6px)
+      transform: rotate(-45deg) translate(0px, 5px)
   .change .bar2
     opacity: 0
   .change .bar3
-    transform: rotate(45deg) translate(-8px, -8px)
+    transform: rotate(45deg) translate(-5px, -10px)
 
 
 
@@ -1095,7 +1098,7 @@
 
 
   .contacts__copyright--media
-    font-size: 11px
+    font-size: 10px
   .contacts__submenu
     font-size: 16px
   .footer-curve
@@ -1143,7 +1146,7 @@
   .header__caption-text
     margin-top: 4px
   .header__caption
-    left: -166px
+    left: -136px
     top: 0
   .header__caption-icon2
     width: 11px
@@ -1664,14 +1667,6 @@
     margin-top: 5px
   .hamburger
     margin-bottom: 5px
-  .bar1, .bar2, .bar3
-    width: 25px
-    height: 3px
-    margin: 4px 0
-  .change .bar1
-    transform: rotate(-45deg) translate(-2px, 5px)
-  .change .bar3
-    transform: rotate(45deg) translate(-5px, -10px)
   .header__action-block
     position: absolute
     right: 0
@@ -2177,7 +2172,8 @@
     height: 300px
   .benefits__video-wrap
     margin: 0 0
-
+  .benefits__video
+    border-radius: 0
 
   .questions__head
     width: 100%
@@ -2197,9 +2193,9 @@
     //background-position: 44px 10px
     //background-size: 23px 33px
 
-  .tabs__title
+  .tabs__item  .tabs__title
     font-size: 14px
-    padding-right: 25px
+    padding-right: 55px
   .tabs__item .tabs__text
     font-size: 12px
     line-height: 30px
@@ -2225,7 +2221,6 @@
     grid-template-areas: 'investor industry company' 'how contact contact' 'copyrights copyrights copyrights'
   .contacts__copyright--media
     padding-top: 40px
-    padding-right: 20px
     width: 100%
     text-align: center
   .contacts__submenu

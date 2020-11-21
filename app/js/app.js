@@ -5,7 +5,7 @@ $(document).ready(function () {
     $('.pagination__item').click(function () {
         let dataTab = $(this).attr("data-tab");
         $('.tabs__item').css('display','none');
-        $('.tabs__item[data-tab="' + dataTab + '"]').css('display','block');
+        $('.tabs__item[data-tab="' + dataTab + '"]').css('display','flex');
         $(this).parent().children().removeClass('pagination__item--active')
         $(this).addClass('pagination__item--active');
     });
