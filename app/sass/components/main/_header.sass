@@ -15,16 +15,18 @@ header .container
   display: flex
   align-items: center
 .header__logo
-  height: 39px
+  padding-top: 5px
 .header__menu
   display: flex
 .header__item
-  margin-left: 53px
-  font-size: $f18
+  margin-left: 45px
+  font-size: 14px
   font-weight: 500
   font-family: $PoppinsM
   color: #0E1131
   opacity: 1
+.header__item:first-child
+  margin-left: 30px
 .header__link
   position: relative
   &:hover
@@ -44,16 +46,15 @@ header .container
   margin-left: -3px
 .header__action-block
   display: flex
-  font-size: $f20
+  font-size: 16px
   font-family: $PoppinsSB
-  padding-right: 82px
+  padding-right: 43px
   text-align: center
 .header__sign-link
   margin-right: 24px
 .header__act-link
-  padding-top: 14px
   display: block
-  width: 170px
+  padding: 15px 15px 0 15px
   height: 60px
 .header__act-link:hover
   background-color: #ECEDFE
