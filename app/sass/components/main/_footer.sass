@@ -12,14 +12,13 @@
     position: relative
     margin: 0 auto
 .footer__contacts
-  padding-left: 97px
+  padding-left: 62px
   padding-right: 67px
-  padding-bottom: 46px
-  //margin-bottom: 128px
+  padding-bottom: 43px
 .contacts__menu
   display: flex
   padding-top: 89px
-  padding-bottom: 44px
+  padding-bottom: 69px
   position: relative
   &:after
     @include pseudo()
@@ -31,16 +30,16 @@
     background: #363636
 
 .contacts__item
-  padding-left: 81px
+  padding-left: 52px
   position: relative
   &:first-child
-    margin-right: 113px
+    margin-right: 78px
   &:nth-child(2)
-    margin-right: 110px
+    margin-right: 88px
   &:nth-child(3)
-    margin-right: 119px
+    margin-right: 88px
   &:nth-child(4)
-    margin-right: 65px
+    margin-right: 75px
     margin-top: 35px
   &:nth-child(5)
     margin-top: 34px
@@ -50,25 +49,32 @@
     &:before
       @include pseudo()
       position: absolute
-      height: 3px
-      width: 39px
+      height: 2px
+      width: 20px
       background-color: $orange
       left: 3px
       top: 17%
   &:nth-child(4), &:nth-child(5)
-    @include bg(34px,17px,"/img/dest/motionfilm-polygon3.png")
+    @include bg(34px,15px,"/img/dest/motionfilm-polygon3.png")
+    .contacts__title
+      text-decoration: underline
+  &:nth-child(5)
+    background-position: 51px 15px
+    .contacts__title
+      padding-left: 17px
 .contacts__title
   display: block
-  font-size: $f30
+  font-size: 20px
   font-family: $PoppinsSB
 .contacts__text
-  margin-top: 29px
+  margin-top: 23px
   display: block
   opacity: 0.53
+  font-size: 16px
   &:hover
     opacity: 0.4
 .contacts__email,.contacts__phone
-  font-size: 20px
+  font-size: 16px
   opacity: 0.53
   display: block
   &:hover
@@ -78,34 +84,31 @@
 .contacts__phone
   margin-top: 20px
 .contacts__submenu
-  padding-top: 48px
+  padding-top: 28px
   padding-left: 18px
   display: flex
   justify-content: space-between
-  font-size: 18px
+  font-size: 16px
   position: relative
   z-index: 11
 .contacts__list
   opacity: 0.29
   display: flex
 .contacts__list-item
-  margin-right: 49px
-.contacts__list-item
-  &:nth-child(2)
-    margin-right: 59px
+  margin-right: 59px
 .contacts__list-link
   &:hover
     opacity: 0.6
 .contacts__copyright
-  margin-right: 43px
+  margin-right: 0
 .contacts__copyright--media
   display: none
 .contacts__announcement
   margin-top: 20px
-  margin-right: 198px
+  margin-right: 124px
   display: flex
   justify-content: space-between
-  font-size: 18px
+  font-size: 16px
 .contacts__annoucement-item
   padding-left: 91px
   padding-top: 46.5px

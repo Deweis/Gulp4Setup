@@ -3,15 +3,15 @@
   padding-top: 115px
   margin-top: 20px
 .questions__head
-  width: 720px
+  width: 540px
   margin: 0 auto
   text-align: center
   position: relative
   padding-bottom: 62px
 .questions__arrow
   position: absolute
-  bottom: 2%
-  left: 0
+  bottom: 13%
+  left: -1%
 .questions__title
   position: relative
   z-index: 2
@@ -20,26 +20,27 @@
     display: none
 .questions__mark
   background-color: #EDF2FE
-  width: 215px
-  height: 115px
+  width: 103px
+  height: 55px
   position: absolute
-  bottom: 149px
-  right: 61px
+  bottom: 162px
+  right: 96px
   z-index: 1
 .question__box
   border: 1px solid #8492AE
   position: absolute
-  width: 220px
-  height: 90px
-  top: 10px
-  margin-left: 13px
-  @include bg(69px,10px,"/img/dest/motionfilm-questionmark.png")
+  width: 106px
+  height: 43px
+  top: 5px
+  left: 6px
+  @include bg(30px,5px,"/img/dest/motionfilm-questionmark.png")
 .questions__subtitle
-  @include font($PoppinsSB, $f30, #57596D)
+  @include font($PoppinsSB, 20px, #57596D)
+  line-height: 40px
   text-align: center
   margin: 0 auto
   position: relative
-  width: 285px
+  width: 228px
   &:after,&:before
     @include pseudo()
     width: 31px
@@ -51,11 +52,11 @@
   &:before
     right: 0
 .questions__tabs
-  margin-top: 51px
-  margin-left: 184px
-  margin-right: 184px
+  margin-top: 17px
+  margin-left: 134px
+  margin-right: 134px
 .tabs__item
-  height: 160px
+  height: 91px
   border: 2px solid #B4C3E0
   background-color: #F9FBFF
   padding: 0 0 0 60px
@@ -69,7 +70,7 @@
     display: none
     line-height: 43px
   &:not(last-child)
-    margin-bottom: 30px
+    margin-bottom: 20px
   .tabs__title
     margin-bottom: 0
     padding-right: 150px
@@ -77,7 +78,7 @@
     opacity: 0.7
     cursor: pointer
 .tabs__item--active
-  padding: 52px 0 40px 60px
+  padding: 43px 0 40px 60px
   background-color: #fff
   height: auto
   border: 2px solid rgba(180, 195, 224, 0.41)
@@ -86,7 +87,7 @@
   .tabs__text
     display: block
   .tabs__title
-    margin-bottom: 63px
+    margin-bottom: 38px
   &:hover
     opacity: 1
 .tabs__item[data-tab="two"],
@@ -94,22 +95,23 @@
 .tabs__item[data-tab="four"]
   display: none
 .tabs__title
-  @include font($PoppinsSB, $f38, #505A76)
+  @include font($PoppinsSB, 28px, #505A76)
+  line-height: 40px
 .tabs__text
   font-size: 24px
   color: #6D7796
 .questions__pagination
-  @include font($RobotoB, $f40, #A0ACC2)
-  margin: 82px 0 56px 35px
+  @include font($RobotoB, 30px, #A0ACC2)
+  margin: 62px 0 43px 35px
   display: flex
   justify-content: center
   align-items: center
 .pagination__item
   cursor: pointer
-  width: 72px
-  height: 72px
+  width: 52px
+  height: 52px
   display: block
-  padding: 16px 0 0 24px
+  padding: 7px 0 0 17px
   margin-right: 10px
 .pagination__item--active
   color: #fff
