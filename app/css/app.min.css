@@ -227,7 +227,7 @@ header .container {
   color: #0e1131;
   opacity: 1
 }
-.header__item:first-child {
+.header__menu .header__item:first-child {
   margin-left: 30px
 }
 .header__link {
@@ -2443,10 +2443,6 @@ header .container {
 .how-header {
   padding-bottom: 190px
 }
-.how-header .container {
-  max-height: 100vh;
-  height: 100%
-}
 .how-header__wrap {
   margin-bottom: 10px
 }
@@ -2904,7 +2900,7 @@ header .container {
 }
 @media (max-width:1400px) {
   html {
-    font-size: 17px
+    font-size: 16px
   }
   footer,
   section {
@@ -2912,15 +2908,21 @@ header .container {
   }
   .container,
   .container-curve {
-    width: 1280px
+    width: 1024px
   }
   header {
     padding-bottom: 99px
+  }
+  header .container {
+    padding-left: 40px
   }
   .header__act-link {
     width: 118px;
     height: 44px;
     padding-top: 10px
+  }
+  .header__action-block {
+    padding-right: 10px
   }
   .header__form {
     margin-top: 118px
@@ -3125,23 +3127,6 @@ header .container {
   }
 }
 @media (max-width:1280px) {
-  html {
-    font-size: 16px
-  }
-  .container,
-  .container-curve {
-    width: 1024px
-  }
-  header .container {
-    padding-left: 40px
-  }
-  .header__logo {
-    width: 190px;
-    height: 34px
-  }
-  .header__action-block {
-    padding-right: 10px
-  }
   .header__title {
     margin-top: 131px;
     margin-bottom: 61px;
@@ -5799,51 +5784,83 @@ header .container {
   }
 }
 @media (max-width:1400px) {
+  .header__how {
+    width: 75%;
+    height: 600px
+  }
+  .header__item {
+    font-size: 13px
+  }
+  .header__action-block {
+    font-size: 15px
+  }
+  .header__sign-link {
+    margin-right: 0
+  }
   .how-h__title {
     font-size: 50px;
     line-height: 70px
   }
   .how-h__subtitle {
     margin-top: 51px;
-    width: 43%;
+    width: 38%;
     line-height: 34px
   }
   .header__card {
-    -webkit-transform: scale(.88);
-    -ms-transform: scale(.88);
-    transform: scale(.88)
+    width: 300px;
+    height: 110px;
+    padding-left: 72px;
+    padding-right: 2px
+  }
+  .header__card-caption {
+    line-height: 28px;
+    margin-bottom: 5px;
+    font-size: 16px
+  }
+  .header__card-text {
+    font-size: 10px;
+    line-height: 16px
   }
   .header__card--yellow {
-    right: -131px;
+    right: -67px;
     top: 37px
   }
   .header__card--blue {
-    right: 74px;
-    bottom: 250px
+    right: 90px;
+    bottom: 205px
   }
   .header__card--orange {
-    right: -249px;
-    top: 310px
+    right: -233px;
+    bottom: 205px
   }
   .header__card--black {
-    left: -40px;
-    bottom: -45px
+    left: -16px;
+    bottom: -78px
   }
   .header__card--green {
-    right: 66px;
-    bottom: -45px
+    right: 123px;
+    bottom: -78px
   }
   .header__card--pink {
-    right: -290px;
-    bottom: -45px
+    right: -206px;
+    bottom: -78px
+  }
+  .header__card-circle {
+    width: 45px;
+    height: 45px;
+    top: 30px;
+    left: 12px;
+    padding: 11px;
+    font-size: 20px
   }
   .header__how-img1 {
-    top: 39%;
-    left: 6%;
-    width: 64.6%;
-    -webkit-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    transform: rotate(-10deg)
+    top: 28%;
+    left: 19%;
+    width: 100%
+  }
+  .header__how-img2 {
+    width: 120px;
+    left: 219px
   }
   .start .container {
     width: 1280px;
@@ -5929,23 +5946,6 @@ header .container {
   }
 }
 @media (max-width:1280px) {
-  .header__how-img2 {
-    left: 29.7%
-  }
-  .header__how-img1 {
-    top: 36%;
-    left: 6%;
-    width: 74.6%
-  }
-  .header__how {
-    width: 75%
-  }
-  .header__card--green {
-    right: 108px
-  }
-  .header__card--pink {
-    right: -222px
-  }
   .start .container {
     width: 1024px;
     padding: 109px 0 0
@@ -6089,7 +6089,8 @@ header .container {
     padding-bottom: 40px
   }
   .header__how {
-    width: 98%
+    width: 98%;
+    height: 680px
   }
   .header__card {
     width: 290px;
@@ -6313,35 +6314,61 @@ header .container {
   }
 }
 @media (max-width:768px) {
+  .how-header .container {
+    padding-left: 0
+  }
+  .header__wrap {
+    padding-left: 20px
+  }
   .header__how {
-    width: 100%
+    width: 100%;
+    padding: 85px 0 0 39px
   }
   .header__card {
-    width: 270px;
-    height: 100px
+    width: 235px;
+    height: 88px
   }
   .how-h__title {
-    font-size: 35px;
-    line-height: 50px
+    font-size: 30px;
+    line-height: 45px
   }
   .how-h__subtitle {
     margin-top: 20px;
     width: 43%;
-    line-height: 28px
+    line-height: 25px;
+    font-size: 17px
   }
   .header__how-img2 {
-    left: 35.7%
+    left: 25%;
+    top: 37px
   }
   .header__card {
-    padding-left: 70px
+    padding-left: 55px
   }
   .header__card-circle {
-    top: 30px;
-    left: 14px
+    top: 14px;
+    left: 12px;
+    width: 35px;
+    height: 35px;
+    font-size: 15px
+  }
+  .header__card--blue {
+    bottom: 371px
+  }
+  .header__card--green {
+    bottom: 74px
+  }
+  .header__card--pink {
+    bottom: 74px
   }
   .header__card-caption {
-    line-height: 18px;
-    margin-bottom: 5px
+    line-height: 15px;
+    margin-bottom: 5px;
+    font-size: 13px
+  }
+  .header__card-text {
+    font-size: 9px;
+    line-height: 14px
   }
   .start .container {
     width: 576px;
