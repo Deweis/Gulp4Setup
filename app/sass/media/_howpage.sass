@@ -63,11 +63,16 @@
 
 
   .start .container
-    width: 1280px
-    padding: 109px 0 100px
+    width: 1024px
     margin-bottom: 0
-  .start__content,.start__arrow
-    transform: scale(0.88)
+  .start__arrow
+    width: 75px
+  .start-text__item:first-child
+    padding-right: 30px
+  .start-text__item:nth-child(2)
+    padding-right: 30px
+  .start-text__item:last-child
+    padding-right: 30px
 
 
 
@@ -126,17 +131,6 @@
     top: 35px
 
 @media (max-width: 1280px)
-
-  .start .container
-    width: 1024px
-    padding: 109px 0 0px
-  .start__phone-img
-    width: 500px
-  .start__text
-    margin-left: 0
-    padding-left: 60%
-  .start-text__item:first-child,.start-text__item:nth-child(2),.start-text__item:last-child
-    padding-right: 0
   .approval .container
     padding-left: 0
   .approval__title
@@ -242,8 +236,8 @@
     width: 45px
     height: 45px
     top: 30px
-    left: 20px
-    padding: 8px
+    left: 11px
+    padding: 10px
   .how-h__title
     font-size: 40px
     line-height: 50px
@@ -252,26 +246,26 @@
     width: 15%
   .header__card
     padding-top: 8px
-    padding-left: 80px
+    padding-left: 66px
   .header__card--yellow
-    right: 12px
+    right: 30px
     top: 72px
   .header__card--blue
-    right: 12px
+    right: 30px
     bottom: 370px
   .header__card--orange
-    left: 12px
+    left: 30px
     top: auto
     bottom: 226px
   .header__card--black
-    right: 12px
+    right: 30px
     left: auto
     bottom: 225px
   .header__card--green
-    left: 12px
+    left: 30px
     bottom: 82px
   .header__card--pink
-    right: 12px
+    right: 30px
     bottom: 81px
   .header__how-img1
     display: none
@@ -284,13 +278,15 @@
 
   .start .container
     width: 768px
-    padding: 68px 0 0
   .start__content
     flex-direction: column-reverse
+  .start__title
+    margin-bottom: 40px
   .start__text
     margin-top: 0
     padding: 0 10%
     margin-bottom: 30px
+    margin-left: 0
   .start__arrow
     display: none
   .start__phone-block
@@ -426,11 +422,12 @@
   .header__card
     padding-left: 55px
   .header__card-circle
-    top: 14px
-    left: 12px
+    top: 18px
+    left: 11px
     width: 35px
     height: 35px
     font-size: 15px
+    padding: 9px
   .header__card--blue
     bottom: 371px
   .header__card--green
@@ -447,10 +444,8 @@
 
 
   .start .container
-      width: 576px
-      padding: 68px 0 0
-  .start__arrow, .start__content
-    transform: scale(1)
+      width: 100%
+      padding-bottom: 15px
 
   .approval .container
     padding-bottom: 766px
@@ -540,6 +535,8 @@
   .how-header .container
     padding-left: 0
     max-height: 100%
+  .how-header
+    padding-bottom: 0
   .how-header__wrap
     padding-left: 20px
     margin-bottom: 10px
@@ -547,50 +544,38 @@
     display: flex
     flex-direction: column
     height: auto
-    padding: 22px 0
+    padding: 22px 22px
   .how-h__title,.how-h__subtitle
-    padding-left: 50px
+    text-align: center
   .how-h__title br
     display: none
   .how-h__subtitle
     margin-top: 7px
-    width: 90%
+    width: auto
     line-height: 28px
     margin-bottom: 20px
-  .header__card
-    width: 250px
-    height: 100px
-    position: static
   .header__card--yellow
     align-self: flex-start
-    left: 12px
-    top: 144px
-    bottom: auto
   .header__card--blue
     align-self: flex-end
-    right: 12px
-    bottom: auto
-    top: 234px
   .header__card--orange
     align-self: flex-start
-    left: 12px
-    top: 324px
   .header__card--black
     align-self: flex-end
-    right: 12px
-    left: auto
-    bottom: auto
-    top: 414px
   .header__card--green
     align-self: flex-start
-    left: 12px
-    top: 504px
   .header__card--pink
     align-self: flex-end
-    right: 12px
-    top: 594px
   .header__how-img
     display: none
+  .header__card
+    width: 250px
+    height: 90px
+    position: relative
+    padding-right: 20px
+    @include positionDef()
+    margin-bottom: 10px
+
 
   .start .container
     width: 100%

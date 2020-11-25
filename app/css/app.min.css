@@ -214,6 +214,9 @@ header .container {
 .header__logo {
   padding-top: 5px
 }
+.header__logo--media {
+  display: none
+}
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2910,20 +2913,6 @@ header .container {
   .container-curve {
     width: 1024px
   }
-  header {
-    padding-bottom: 99px
-  }
-  header .container {
-    padding-left: 40px
-  }
-  .header__act-link {
-    width: 118px;
-    height: 44px;
-    padding-top: 10px
-  }
-  .header__action-block {
-    padding-right: 10px
-  }
   .header__form {
     margin-top: 118px
   }
@@ -3641,14 +3630,6 @@ header .container {
   .solution .container {
     width: 1024px
   }
-  header .container {
-    padding-left: 20px;
-    position: relative
-  }
-  .header__logo {
-    margin-left: -150px;
-    padding-top: 3px
-  }
   .header__title {
     font-size: 35px;
     width: 44%;
@@ -3669,99 +3650,6 @@ header .container {
     left: 59px;
     width: 10px;
     height: 16px
-  }
-  nav {
-    display: none
-  }
-  .hamburger-content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -100%;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    display: block
-  }
-  .wm-hamburger {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 5;
-    background-color: #ffa779;
-    opacity: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center
-  }
-  .wm-hamburger li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
-    margin-left: 0;
-    font-size: 23px
-  }
-  .wm-hamburger a {
-    display: block;
-    width: 100%;
-    -webkit-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #fff
-  }
-  .wm-hamburger a:hover {
-    background-color: rgba(255,255,255,.4)
-  }
-  .wm-hamburger .header__link--is-active:after {
-    left: 50%;
-    top: 0
-  }
-  .hamburger-content-active {
-    left: 0
-  }
-  .hamburger {
-    display: inline-block;
-    cursor: pointer;
-    z-index: 6;
-    position: relative
-  }
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 25px;
-    height: 3px;
-    margin: 4px 0;
-    background-color: #333;
-    -webkit-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s
-  }
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(0,5px);
-    -ms-transform: rotate(-45deg) translate(0,5px);
-    transform: rotate(-45deg) translate(0,5px)
-  }
-  .change .bar2 {
-    opacity: 0
-  }
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-5px,-10px);
-    -ms-transform: rotate(45deg) translate(-5px,-10px);
-    transform: rotate(45deg) translate(-5px,-10px)
   }
   .introduction__img-block {
     height: 375px
@@ -4061,15 +3949,6 @@ header .container {
   .phone-block {
     background-size: 85% 700px;
     height: 700px
-  }
-  .header__logo {
-    width: 150px;
-    height: auto;
-    margin-left: -40px;
-    margin-top: 5px
-  }
-  .hamburger {
-    margin-bottom: 0
   }
   .header__title {
     font-size: 30px;
@@ -4966,31 +4845,6 @@ header .container {
     background-size: 344px 500px;
     height: 500px
   }
-  .header__wrap {
-    -webkit-box-pack: left;
-    -ms-flex-pack: left;
-    justify-content: left
-  }
-  .header__logo {
-    width: 105px;
-    margin-left: 20px;
-    margin-top: 5px
-  }
-  .hamburger {
-    margin-bottom: 5px
-  }
-  .header__action-block {
-    position: absolute;
-    right: 0
-  }
-  .header__act-link {
-    width: auto;
-    height: auto;
-    padding-top: 0
-  }
-  .header__act-link:hover {
-    background: 0 0
-  }
   .header__mobile-img {
     margin-top: 10px;
     max-width: 110%;
@@ -5863,15 +5717,20 @@ header .container {
     left: 219px
   }
   .start .container {
-    width: 1280px;
-    padding: 109px 0 100px;
+    width: 1024px;
     margin-bottom: 0
   }
-  .start__arrow,
-  .start__content {
-    -webkit-transform: scale(.88);
-    -ms-transform: scale(.88);
-    transform: scale(.88)
+  .start__arrow {
+    width: 75px
+  }
+  .start-text__item:first-child {
+    padding-right: 30px
+  }
+  .start-text__item:nth-child(2) {
+    padding-right: 30px
+  }
+  .start-text__item:last-child {
+    padding-right: 30px
   }
   .approval .container {
     padding-bottom: 900px
@@ -5946,22 +5805,6 @@ header .container {
   }
 }
 @media (max-width:1280px) {
-  .start .container {
-    width: 1024px;
-    padding: 109px 0 0
-  }
-  .start__phone-img {
-    width: 500px
-  }
-  .start__text {
-    margin-left: 0;
-    padding-left: 60%
-  }
-  .start-text__item:first-child,
-  .start-text__item:last-child,
-  .start-text__item:nth-child(2) {
-    padding-right: 0
-  }
   .approval .container {
     padding-left: 0
   }
@@ -6100,8 +5943,8 @@ header .container {
     width: 45px;
     height: 45px;
     top: 30px;
-    left: 20px;
-    padding: 8px
+    left: 11px;
+    padding: 10px
   }
   .how-h__title {
     font-size: 40px;
@@ -6113,32 +5956,32 @@ header .container {
   }
   .header__card {
     padding-top: 8px;
-    padding-left: 80px
+    padding-left: 66px
   }
   .header__card--yellow {
-    right: 12px;
+    right: 30px;
     top: 72px
   }
   .header__card--blue {
-    right: 12px;
+    right: 30px;
     bottom: 370px
   }
   .header__card--orange {
-    left: 12px;
+    left: 30px;
     top: auto;
     bottom: 226px
   }
   .header__card--black {
-    right: 12px;
+    right: 30px;
     left: auto;
     bottom: 225px
   }
   .header__card--green {
-    left: 12px;
+    left: 30px;
     bottom: 82px
   }
   .header__card--pink {
-    right: 12px;
+    right: 30px;
     bottom: 81px
   }
   .header__how-img1 {
@@ -6153,8 +5996,7 @@ header .container {
     line-height: 16px
   }
   .start .container {
-    width: 768px;
-    padding: 68px 0 0
+    width: 768px
   }
   .start__content {
     -webkit-box-orient: vertical;
@@ -6162,10 +6004,14 @@ header .container {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse
   }
+  .start__title {
+    margin-bottom: 40px
+  }
   .start__text {
     margin-top: 0;
     padding: 0 10%;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    margin-left: 0
   }
   .start__arrow {
     display: none
@@ -6346,11 +6192,12 @@ header .container {
     padding-left: 55px
   }
   .header__card-circle {
-    top: 14px;
-    left: 12px;
+    top: 18px;
+    left: 11px;
     width: 35px;
     height: 35px;
-    font-size: 15px
+    font-size: 15px;
+    padding: 9px
   }
   .header__card--blue {
     bottom: 371px
@@ -6371,14 +6218,8 @@ header .container {
     line-height: 14px
   }
   .start .container {
-    width: 576px;
-    padding: 68px 0 0
-  }
-  .start__arrow,
-  .start__content {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1)
+    width: 100%;
+    padding-bottom: 15px
   }
   .approval .container {
     padding-bottom: 766px
@@ -6496,6 +6337,9 @@ header .container {
     padding-left: 0;
     max-height: 100%
   }
+  .how-header {
+    padding-bottom: 0
+  }
   .how-header__wrap {
     padding-left: 20px;
     margin-bottom: 10px
@@ -6509,68 +6353,58 @@ header .container {
     -ms-flex-direction: column;
     flex-direction: column;
     height: auto;
-    padding: 22px 0
+    padding: 22px 22px
   }
   .how-h__subtitle,
   .how-h__title {
-    padding-left: 50px
+    text-align: center
   }
   .how-h__title br {
     display: none
   }
   .how-h__subtitle {
     margin-top: 7px;
-    width: 90%;
+    width: auto;
     line-height: 28px;
     margin-bottom: 20px
   }
-  .header__card {
-    width: 250px;
-    height: 100px;
-    position: static
-  }
   .header__card--yellow {
     -ms-flex-item-align: start;
-    align-self: flex-start;
-    left: 12px;
-    top: 144px;
-    bottom: auto
+    align-self: flex-start
   }
   .header__card--blue {
     -ms-flex-item-align: end;
-    align-self: flex-end;
-    right: 12px;
-    bottom: auto;
-    top: 234px
+    align-self: flex-end
   }
   .header__card--orange {
     -ms-flex-item-align: start;
-    align-self: flex-start;
-    left: 12px;
-    top: 324px
+    align-self: flex-start
   }
   .header__card--black {
     -ms-flex-item-align: end;
-    align-self: flex-end;
-    right: 12px;
-    left: auto;
-    bottom: auto;
-    top: 414px
+    align-self: flex-end
   }
   .header__card--green {
     -ms-flex-item-align: start;
-    align-self: flex-start;
-    left: 12px;
-    top: 504px
+    align-self: flex-start
   }
   .header__card--pink {
     -ms-flex-item-align: end;
-    align-self: flex-end;
-    right: 12px;
-    top: 594px
+    align-self: flex-end
   }
   .header__how-img {
     display: none
+  }
+  .header__card {
+    width: 250px;
+    height: 90px;
+    position: relative;
+    padding-right: 20px;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    margin-bottom: 10px
   }
   .start .container {
     width: 100%;
@@ -6671,6 +6505,177 @@ header .container {
 @media (max-width:370px) {
   .why__title--unique {
     padding-right: 0
+  }
+}
+@media (max-width:1400px) {
+  header {
+    padding-bottom: 99px
+  }
+  header .container {
+    padding-left: 40px
+  }
+  .header__act-link {
+    width: 118px;
+    height: 44px;
+    padding-top: 10px
+  }
+  .header__action-block {
+    padding-right: 10px
+  }
+}
+@media (max-width:1024px) {
+  header .container {
+    padding-left: 20px;
+    position: relative
+  }
+  .header__logo {
+    margin-left: -150px
+  }
+  .header__logo--desktop {
+    display: none
+  }
+  .header__logo--media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0
+  }
+  nav {
+    display: none
+  }
+  .hamburger-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    display: block
+  }
+  .wm-hamburger {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    background-color: #ffa779;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center
+  }
+  .wm-hamburger li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    font-size: 23px
+  }
+  .wm-hamburger a {
+    display: block;
+    width: 100%;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff
+  }
+  .wm-hamburger a:hover {
+    background-color: rgba(255,255,255,.4)
+  }
+  .wm-hamburger .header__link--is-active:after {
+    left: 50%;
+    top: 0
+  }
+  .hamburger-content-active {
+    left: 0
+  }
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 6;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 0
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: #333;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(0,5px);
+    -ms-transform: rotate(-45deg) translate(0,5px);
+    transform: rotate(-45deg) translate(0,5px)
+  }
+  .change .bar2 {
+    opacity: 0
+  }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px,-10px);
+    -ms-transform: rotate(45deg) translate(-5px,-10px);
+    transform: rotate(45deg) translate(-5px,-10px)
+  }
+}
+@media (max-width:768px) {
+  .header__logo {
+    width: 150px;
+    height: auto;
+    margin-left: -40px;
+    margin-top: 0
+  }
+  .hamburger {
+    margin-bottom: 0
+  }
+}
+@media (max-width:576px) {
+  header .container {
+    padding-left: 0
+  }
+  .header__wrap {
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    padding-top: 15px
+  }
+  .header__logo {
+    width: 105px;
+    margin-left: -18px
+  }
+  .hamburger {
+    margin-bottom: 0
+  }
+  .header__action-block {
+    font-size: 11px;
+    position: absolute;
+    right: 0
+  }
+  .header__act-link {
+    width: auto;
+    height: auto;
+    padding: 0 8px
+  }
+  .header__act-link:hover {
+    background: 0 0
   }
 }
 .popup-overlay {
