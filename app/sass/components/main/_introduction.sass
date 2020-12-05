@@ -1,28 +1,36 @@
 .introduction
   background: #FBFBFB
-  padding-top: 69px
+  padding-top: 51px
   text-align: center
   text-transform: capitalize
+  margin-top: 25px
 .introduction__title
   text-align: center
   margin-bottom: 30px
+  font-size: 50px
 .introduction__title--blue
   color: $blue
 .introduction__title--orange
   color: #F97E4C
 .introduction__subtitle
   font-family: $PoppinsB
-  line-height: 40px
-.introduction__subtitle--width
-  width: 62%
-  margin-left: 11px
+  line-height: 34px
+  font-size: 20px
 
 .introduction__text
   text-align: center
   width: 65%
   font-family: $PoppinsR
-  margin: 48px 0 45px
+  margin: 24px 0 26px
+  font-size: 20px
   line-height: 40px
+  &:before
+    display: block
+    content: ""
+    width: 125px
+    height: 2px
+    background-image: url("/img/dest/motionfilm-introduction-line.png")
+    margin: 0 auto 46px
 .introduction__company-name
   font-family: $PoppinsB
 .introduction__link
@@ -40,8 +48,8 @@
   margin-left: 7px
 .introduction__img-block
   position: relative
-  margin-top: 200px
-  height: 820px
+  margin-top: 123px
+  height: 597px
 
 .introduction__circle,
 .introduction__popcorn,
@@ -52,87 +60,100 @@
 .introduction__token1,
 .introduction__token2,
 .introduction__token-block,
-.introduction__points
+.introduction__points,
+.introduction__token-card
   position: absolute
 .introduction__circle
   top: 0
   left: 50%
-  margin-left: -840px
-  z-index: 0
+  margin-left: -612px
+  z-index: 1
 .introduction__customer
-  top: -105px
+  top: -36px
   left: 50%
-  margin-left: -363px
+  margin-left: -254px
   z-index: 2
 .introduction__curve
-  top: 19%
-  left: 24%
+  top: 9%
+  left: 16%
   z-index: 3
 .introduction__popcorn
-  bottom: 5%
+  bottom: 16%
   left: 15%
-  z-index: 1
+  z-index: 2
 .introduction__play
   top: 40%
-  right: 29%
+  right: 25%
   z-index: 2
 .introduction__motion
-  bottom: 12%
+  bottom: 24%
   right: 14%
-  z-index: 1
-.introduction__token1
-  top: -1%
-  right: 19.5%
-  z-index: 1
-  width: 260px
-  height: 260px
-.introduction__token2
-  top: -4%
-  right: 18%
-  z-index: 0
-  width: 260px
-  height: 260px
-.introduction__token-block
-  background: #fff
-  box-shadow: 0px 8px 8px rgba(253, 235, 229, 0.42)
-  border-radius: 6px
-  border: 1px solid #FFEBE4
-  box-sizing: border-box
-  width: 264px
-  height: 110px
-  position: absolute
   z-index: 2
-  display: inline-block
-.introduction__total-img
-  position: absolute
-.token-card__text
-  font-family: $Nunito
-  font-size: $f16
-  position: absolute
-  left: 45%
-  top: 20px
-  color: #57596D
-.token-card__number
-  font-family: $Heebo
-  font-size: $f36
-  position: absolute
-  bottom: 12px
-  right: 50px
-  color: $black
-  padding-left: 40px
-.introduction__total-img
-  left: 10px
-.introduction__money
-  @include bg(15px,11px,"/img/dest/motionfilm-component26.png")
-  background-size: 18px 25px
-.introduction__token-block--first
-  top: 27%
-  left: 10%
-.introduction__token-block--second
-  top: 4.5%
-  left: 21.5%
+.introduction__token1
+  top: 5%
+  right: 17.5%
+  z-index: 2
+.introduction__token-card
+  z-index: 4
+.introduction__token-card1
+  left: 54px
+  top: 135px
+.introduction__token-card2
+  left: 225px
+  top: 0
 .introduction__points
   z-index: 1
   bottom: 0
   left: 6%
+
+
+//.introduction__token2
+//  top: -4%
+//  right: 18%
+//  z-index: 0
+//  width: 260px
+//  height: 260px
+//.introduction__token-block
+//  background: #fff
+//  box-shadow: 0px 8px 8px rgba(253, 235, 229, 0.42)
+//  border-radius: 6px
+//  border: 1px solid #FFEBE4
+//  box-sizing: border-box
+//  width: 264px
+//  height: 110px
+//  position: absolute
+//  z-index: 2
+//  display: inline-block
+
+//.token-card__text
+//  font-family: $Nunito
+//  font-size: $f16
+//  position: absolute
+//  left: 45%
+//  top: 20px
+//  color: #57596D
+//.token-card__number
+//  font-family: $Heebo
+//  font-size: $f36
+//  position: absolute
+//  bottom: 12px
+//  right: 50px
+//  color: $black
+//  padding-left: 40px
+
+//.introduction__money
+//  @include bg(15px,11px,"/img/dest/motionfilm-component26.png")
+//  background-size: 18px 25px
+//.introduction__token-block--first
+//  top: 27%
+//  left: 10%
+//.introduction__token-block--second
+//  top: 4.5%
+//  left: 21.5%
+//.introduction__total-img
+//  position: absolute
+//.introduction__total-img
+//  left: 10px
+
+
 

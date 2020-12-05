@@ -1,7 +1,7 @@
 header
-  padding-bottom: 167px
+  padding-bottom: 210px
 header .container
-  padding-left: 73px
+  padding-left: 50px
 
 .header__wrap
   padding-top: 36px
@@ -56,8 +56,8 @@ header .container
   margin-right: 24px
 .header__act-link
   display: block
-  padding: 15px 15px 0 15px
-  height: 60px
+  padding: 10px 15px 0 15px
+  height: 43px
 .header__act-link:hover
   background-color: #ECEDFE
   border-radius: 230px
@@ -66,17 +66,20 @@ header .container
 .header__mobile-img
   display: none
 .header__title
-  margin-top: 187px
-  margin-bottom: 44px
-  width: 37.7%
-  line-height: 123%
+  font-size: 44px
+  line-height: 60px
+  margin-top: 90px
+  margin-bottom: 27px
+  width: 494px
   --animation: fadeInLeft
   --animation-duration: 2s
   --animation-delay: 0.3s
 .header__subtitle
-  width: 36%
-  line-height: 45px
+  font-size: 18px
+  width: 512px
+  line-height: 36px
   color: $textGray
+  text-transform: lowercase
 .header__subtitle-project
   font-family: $PoppinsSB
   color: #000
@@ -90,48 +93,48 @@ header .container
     left: 0
     background-image: linear-gradient(to right, rgb(77,77,251) 46%, rgba(77,77,251,0))
     background-position: bottom
-    background-size: 12px 3px
+    background-size: 9px 3px
     background-repeat: repeat-x
 
 .header__form
-  margin-top: 118px
+  margin-top: 69px
   display: grid
 .header__investor
-  width: 677px
-  height: 106px
+  width: 436px
+  height: 69px
   position: relative
-  margin-bottom: 62px
+  margin-bottom: 26px
 .header__input
   border: 1px solid #D5D7E3
-  height: 106px
-  font-size: $f21
+  height: 69px
+  font-size: 16px
   width: 100%
   background: #FBFBFF
   box-shadow: 0px 20px 16px rgba(220, 220, 241, 0.1)
   border-radius: 10px
-  padding-left: 31px
-  padding-right: 326px
+  padding-left: 25px
+  padding-right: 218px
 .header__button
+  font-size: 18px
   display: flex
   justify-content: center
   align-items: center
-  width: 316px
-  height: 95px
+  width: 206px
+  height: 61px
   position: absolute
   top: 5px
   right: 6px
   border-radius: 0px 9px 9px 0px
-
 .header__terms
   color: #000000
-  font-size: $f16
+  font-size: 14px
   display: block
   position: relative
-  padding-left: 55px
+  padding-left: 40px
   margin-bottom: 12px
   cursor: pointer
   user-select: none
-  width: 22.3%
+  width: 374px
 .header__learn-more
   color: $blue
   font-family: $PoppinsM
@@ -145,17 +148,17 @@ header .container
   width: 0
 .terms__checkmark
   position: absolute
-  top: -3px
+  top: -4px
   left: 0
-  height: 34px
-  width: 35px
+  height: 26px
+  width: 25px
   background-color: #fff
   border: 1px solid #D5D7E3
 .terms__checkmark:after
   content: ""
   position: absolute
   display: none
-.header__terms:hover .terms__input ~ .checkmark
+.terms:hover .terms__input ~ .checkmark
   background: #fff
 .terms__input:checked ~ .terms__checkmark:after
   display: block
@@ -168,15 +171,15 @@ header .container
   background-repeat: no-repeat
   background-position-x: 50%
   background-position-y: 50%
-
+  background-size: 12px 9px
 .header__input::placeholder
   color: #CFCFDF
-  font-size: $f21
+  font-size: 18px
   font-family: $PoppinsM
 
 .header__visual
   position: absolute
-  left: 821px
+  left: 635px
   top: 130px
   width: 100%
 .header__img

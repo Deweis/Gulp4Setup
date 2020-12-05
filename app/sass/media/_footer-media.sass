@@ -1,0 +1,165 @@
+@media (max-width: 1400px)
+  .contacts__item
+    padding-left: 66px
+    width: 42%
+  .contacts__item:first-child,.contacts__item:nth-child(2),
+  .contacts__item:nth-child(3),.contacts__item:nth-child(4)
+    margin-right: 42px
+  .contacts__item:first-child,.contacts__item:nth-child(2),
+  .contacts__item:nth-child(3)
+    &:before
+      left: 25px
+  .contacts__title
+    font-size: 18px
+  .contacts__announcement
+    margin-right: 0
+  .contacts__copyright
+    margin-bottom: 20px
+  .footer .container
+    width: 100%
+  .contacts__menu
+    padding-top: 40px
+    padding-bottom: 48px
+    width: 100%
+    &:after
+      width: 100%
+  .contacts__submenu
+    padding-left: 0
+  .contacts__social
+    margin-top: 50px
+  .contacts__annoucement-android
+    padding-left: 75px
+    background-position: 0 31px
+
+@media (max-width: 1280px)
+  .contacts__menu
+    display: grid
+    grid-template-areas: 'investor investor investor industry industry industry' 'how how how contact contact contact' 'copyrights copyrights copyrights copyrights copyrights copyrights'
+    grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%
+    padding-bottom: 10px
+  .contacts__item
+    width: 90%
+    margin-bottom: 40px
+  .contacts__item:first-child
+    grid-area: investor
+  .contacts__item:nth-child(2)
+    grid-area: industry
+  .contacts__item:nth-child(3)
+    grid-area: how
+  .contacts__item:nth-child(4)
+    grid-area: contact
+  .contacts__item:last-child
+    display: block
+    grid-area: copyrights
+    padding-left: 0
+  .contacts__item:nth-child(5) .contacts__title
+    padding-left: 0
+  .contacts__item:nth-child(5)
+    background-position: 34px 15px
+  .contacts__email, .contacts__phone
+    font-size: inherit
+  .contacts__copyright--media
+    display: block
+    padding-top: 30px
+  .contacts__copyright--main
+    display: none
+
+@media (max-width: 1024px)
+  .footer__contacts
+    padding-left: 40px
+    padding-right: 40px
+  .contacts__copyright--media
+    font-size: 14px
+  .contacts__submenu
+    font-size: 16px
+  .contacts__item:first-child:before, .contacts__item:nth-child(2):before, .contacts__item:nth-child(3):before
+    left: 32px
+
+
+@media (max-width: 768px)
+  .contacts__item
+    padding-left: 0
+    width: 100%
+  .contacts__item:first-child:before,
+  .contacts__item:nth-child(2):before,
+  .contacts__item:nth-child(3):before
+    display: none
+  .contacts__item:nth-child(4)
+    padding-left: 0
+    background: none
+    .contacts__title
+      padding-top: 10px
+      padding-left: 15px
+      margin-right: 20px
+      @include bg(0,0,"/img/dest/motionfilm-polygon3.png")
+  .contacts__title
+    font-size: 1.164rem
+    display: inline-block
+  .contacts__item:first-child,
+  .contacts__item:nth-child(2),
+  .contacts__item:nth-child(3)
+    .contacts__title
+      @include bg(0,0,"/img/dest/motionfilm-component28.png")
+      padding-top: 10px
+      padding-left: 5px
+  .contacts__list-item
+    margin-right: 25px
+  .contacts__list-item:nth-child(2)
+    margin-right: 25px
+  .contacts__submenu
+    font-size: 12px
+  .contacts__announcement
+    font-size: 14px
+  .contacts__annoucement-android
+    background-size: 33px 33px
+    padding-left: 44px
+  .contacts__annoucement-iphone
+    background-size: 33px 33px
+    background-position: 49px 31px
+  .contacts__icon
+    width: 50px
+    height: 50px
+
+@media (max-width: 576px)
+  .footer__contacts
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 0
+  .contacts__menu
+    padding-bottom: 0
+    margin-left: 10px
+    padding-top: 36px
+    grid-template-areas: 'investor investor investor industry industry industry' 'how how how contact contact contact' 'copyrights copyrights copyrights copyrights copyrights copyrights'
+  .contacts__title
+    font-size: 13px
+  .contacts__text
+    font-size: 12px
+  .contacts__copyright--media
+    font-size: 11px
+    padding-top: 20px
+    width: 100%
+    text-align: center
+    margin-bottom: 0
+  .contacts__submenu
+    padding-top: 10px
+  .contacts__list
+    padding-left: 20px
+  .contacts__announcement
+    font-size: 12px
+  .contacts__annoucement-item
+    text-align: left
+    padding-left: 20px
+    padding-top: 65px
+    padding-bottom: 15px
+  .contacts__annoucement-android
+    background-position: 20% 25px
+  .contacts__annoucement-iphone
+    text-align: right
+    background-position: 95% 25px
+  .contacts__social
+    margin-left: 0
+
+@media (max-width: 370px)
+  .contacts__email,.contacts__phone
+    font-size: 10px
+

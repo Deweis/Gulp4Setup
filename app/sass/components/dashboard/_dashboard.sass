@@ -1,0 +1,354 @@
+.dashboard
+  display: flex
+.sidebar
+  width: 15vw
+  padding-top: 15px
+  padding-bottom: 133px
+  background: #EDF5FF
+  position: relative
+.dashboard-main
+  width: 85vw
+
+.sidebar__head
+  cursor: pointer
+  display: flex
+  align-items: center
+  margin-left: 21px
+  margin-right: 20px
+  background-image: url("/img/dest/motionfilm-dashboard-arrow.png")
+  background-repeat: no-repeat
+  background-size: 11px 8px
+  background-position: right center
+.sidebar__head-icon
+  width: 40px
+  margin-right: 8px
+.sidebar__head-text
+  @include font($RobotoB, 15px, #61728B )
+  display: block
+.device-menu
+  display: none
+  position: absolute
+  top: 60px
+  margin-left: 21px
+  width: 82%
+  background: #fff
+  padding-bottom: 5px
+.device-menu__link
+  display: flex
+  align-items: center
+  margin-top: 10px
+  border-bottom: 1px solid #EDF5FF
+
+.sidebar__menu
+  margin-left: 22px
+.sidebar__menu-top
+  margin-top: 77px
+.sidebar__menu-item
+  height: 7px
+  width: 100px
+  background: #D0E4FE
+  margin-bottom: 26px
+.sidebar__menu-item--active
+  background: #5D6C81
+.sidebar__menu-top
+  .sidebar__menu-item:first-child
+    width: 81px
+  .sidebar__menu-item:nth-child(2)
+    width: 120px
+  .sidebar__menu-item:nth-child(3)
+    width: 120px
+  .sidebar__menu-item:nth-child(4)
+    width: 147px
+  .sidebar__menu-item:nth-child(5)
+    width: 120px
+  .sidebar__menu-item:nth-child(6)
+    width: 147px
+  .sidebar__menu-item:nth-child(7)
+    width: 139px
+  .sidebar__menu-item:nth-child(8)
+    width: 163px
+  .sidebar__menu-item:nth-child(9)
+    width: 68px
+
+.sidebar__menu-bottom
+  margin-top: 107px
+  .sidebar__menu-item:first-child
+    width: 120px
+  .sidebar__menu-item:nth-child(2)
+    width: 162px
+  .sidebar__menu-item:nth-child(3)
+    width: 120px
+  .sidebar__menu-item:nth-child(4)
+    width: 147px
+  .sidebar__menu-item:nth-child(5)
+    width: 120px
+  .sidebar__menu-item:nth-child(6)
+    width: 43px
+  .sidebar__menu-item:nth-child(7)
+    width: 147px
+  .sidebar__menu-item:nth-child(8)
+    width: 120px
+
+
+.dashboard-main
+  padding-top: 41.5px
+  position: relative
+.dash-head
+  padding-bottom: 0
+  margin-left: 37.5px
+  margin-right: 48.75px
+  margin-bottom: 25px
+  display: flex
+  justify-content: space-between
+.dashboard-form
+  background-image: url("/img/dest/motionfilm-dashboard-search.png")
+  background-repeat: no-repeat
+  background-position: 34px 15px
+  background-size: 21.75px 21.75px
+.dashboard-form__input
+  width: 445px
+  height: 53px
+  padding-left: 75px
+  font-size: 18px
+  background: rgba(255, 255, 255, 0.1)
+  border: 2px solid rgba(241, 242, 244, 0.7)
+  border-radius: 200px
+  &::placeholder
+    color: rgba(166, 172, 195, 0.33)
+  &:focus
+    outline: none
+    border-color: rgba(235, 235, 237, 1)
+
+
+.dashboard-account
+  display: flex
+  align-items: center
+  height: 69px
+  border-left: 2px solid #EEF5FD
+  padding-left: 23px
+.dashboard-account__icon
+  align-self: center
+  margin-right: 19px
+.dashboard-account__name
+  cursor: pointer
+  padding-right: 45px
+  font-size: 18px
+  font-family: $Nunito
+  color: #374559
+  background-image: url("/img/dest/motionfilm-dashboard-arrow.png")
+  background-repeat: no-repeat
+  background-size: 11px 8px
+  background-position: right center
+.dashboard-account__status
+  font-size: 13.5px
+  font-family: $Nunito
+  color: #7A85AA
+.dashboard-dropdown
+  display: none
+  background: #fff
+  width: 180px
+  position: absolute
+  z-index: 2
+  top: 118px
+  right: 34px
+  font-size: 12px
+  font-family: $Nunito
+  color: #626B89
+  border: 1px solid #E5EFF9
+  box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.04)
+  border-radius: 5px
+  &:before
+    display: block
+    content: ''
+    background-image: url("/img/dest/motionfilm-dashboard-arrow2.png")
+    background-repeat: no-repeat
+    background-size: 14px 10px
+    width: 14px
+    height: 10px
+    position: absolute
+    right: 15px
+    top: -10px
+.dashboard-dropdown__item:hover
+  background: #F2F9FF
+.dashboard-dropdown__link
+  display: block
+  padding: 13px 0 13px 12px
+  margin-right: 16px
+  background-repeat: no-repeat
+  background-position: right center
+.dashboard-dropdown__link--profile
+  background-image: url("/img/dest/motionfilm-dashboard-menu-icon1.png")
+  background-size: 19px
+.dashboard-dropdown__link--settings
+  background-image: url("/img/dest/motionfilm-dashboard-menu-icon2.png")
+  background-size: 19px
+.dashboard-dropdown__link--logout
+  background-image: url("/img/dest/motionfilm-dashboard-menu-icon3.png")
+  background-size: 16px
+
+
+
+
+
+.dash-body
+  position: relative
+  z-index: 1
+  width: 1161px
+  margin-left: 29px
+  margin-right: 34px
+  margin-bottom: 1px
+  padding-top: 153px
+  padding-bottom: 177px
+  border: 1.5px solid #E5EFF9
+.dashboard-img
+  width: 397px
+  display: block
+  margin: 0 auto
+.dashboard-title
+  padding: 0 283px
+  text-align: center
+  font-size: 27px
+  line-height: 40px
+  font-family: $PoppinsB
+  color: #0C1130
+  margin-top: 61px
+.dashboard-title--important
+  color: #F97E4C
+.dashboard-subtitle
+  padding: 0 383px
+  margin-top: 16px
+  display: block
+  text-align: center
+  font-size: 13.5px
+  line-height: 22px
+  color: #57596D
+  font-family: $PoppinsSB
+
+@media (min-width: 1440px)
+  .sidebar
+    padding-bottom: 0
+    height: 100vh
+  .dashboard
+    height: 100vh
+  .dash-body
+    width: 82vw
+    height: 85vh
+
+@media (max-width: 1400px)
+  .sidebar
+    height: 100vh
+    padding-bottom: 0
+  .dashboard-main
+    height: 100vh
+  .dash-body
+    padding-top: 10vh
+    padding-bottom: 10vh
+    width: 82vw
+  .sidebar__menu-top
+    margin-top: 7vh
+  .sidebar__menu-bottom
+    margin-top: 7vh
+  .sidebar__menu-item
+    height: 0.6vh
+    margin-bottom: 2vh
+  .dashboard-img
+    width: 300px
+  .dashboard-title
+    font-size: 23px
+    line-height: 35px
+    padding: 0 22vw
+  .dashboard-subtitle
+    line-height: 19px
+    font-size: 12px
+    padding: 0 22vw
+  .sidebar__menu-top
+    .sidebar__menu-item:first-child
+      width: 7vw
+    .sidebar__menu-item:nth-child(2)
+      width: 9vw
+    .sidebar__menu-item:nth-child(3)
+      width: 9vw
+    .sidebar__menu-item:nth-child(4)
+      width: 10.5vw
+    .sidebar__menu-item:nth-child(5)
+      width: 9vw
+    .sidebar__menu-item:nth-child(6)
+      width: 10.5vw
+    .sidebar__menu-item:nth-child(7)
+      width: 9.5vw
+    .sidebar__menu-item:nth-child(8)
+      width: 11vw
+    .sidebar__menu-item:nth-child(9)
+      width: 6vw
+
+  .sidebar__menu-bottom
+    .sidebar__menu-item:first-child
+      width: 9vw
+    .sidebar__menu-item:nth-child(2)
+      width: 11vw
+    .sidebar__menu-item:nth-child(3)
+      width: 9vw
+    .sidebar__menu-item:nth-child(4)
+      width: 10.5vw
+    .sidebar__menu-item:nth-child(5)
+      width: 9vw
+    .sidebar__menu-item:nth-child(6)
+      width: 5vw
+    .sidebar__menu-item:nth-child(7)
+      width: 10.5vw
+    .sidebar__menu-item:nth-child(8)
+      width: 9vw
+
+@media (max-width: 1024px)
+  .dash-body
+    width: 80vw
+    height: 80vh
+  .sidebar__menu
+    margin-left: 2vw
+  .sidebar__head
+    margin-left: 1.6vw
+    margin-right: 1.5vw
+  .sidebar__head-icon
+    width: 3.5vw
+    margin-right: 0.3vw
+  .sidebar__head-text
+    font-size: 1.2vw
+  .dashboard-form
+    background-position: 4vw 1.8vw
+    background-size: 1.8vw 1.8vw
+  .dashboard-form__input
+    width: 40vw
+    height: 5.5vw
+    padding-left: 7vw
+  .dashboard-img
+    width: 30vw
+  .dashboard-title
+    font-size: 2.7vw
+    line-height: 3.5vw
+    padding: 0 15vw
+  .dashboard-subtitle
+    font-size: 1.4vw
+    line-height: 2vw
+    padding: 0 12vw
+  .device-menu
+    margin-left: 1.5vw
+    top: 50px
+  .dash-head
+    margin-bottom: 2vw
+  .dashboard-account
+    height: 6vw
+  .dashboard-account__icon
+    margin-right: 2vw
+    width: 5vw
+  .dashboard-account__text
+    background-image: url("/img/dest/motionfilm-dashboard-arrow.png")
+    background-repeat: no-repeat
+    background-size: 11px 8px
+    background-position: right center
+  .dashboard-account__name
+    font-size: 1.5vw
+    background: none
+  .dashboard-account__status
+    font-size: 1.2vw
+
+

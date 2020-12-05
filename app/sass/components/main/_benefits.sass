@@ -1,20 +1,19 @@
 .benefits
-  padding-top: 70px
-  padding-bottom: 90px
-  background: #FAFAFA
+  padding-top: 40px
+  padding-bottom: 65px
 .benefits__head
   text-align: center
   position: relative
 .benefits__token-wrap
   position: relative
   width: 360px
-  height: 300px
+  height: 253px
   margin: 0 auto
 .benefits__img1,.benefits__img2,.benefits__img3,.benefits__img4,.benefits__point1,.benefits__point2,.benefits__point3
   position: absolute
 .benefits__img1
-  top: 106px
-  left: 79px
+  top: 54px
+  left: 110px
 .benefits__img2
   top: 89px
   right: 57px
@@ -27,35 +26,33 @@
 
 .benefits__point1
   top: 180px
-  right: 236px
+  right: 145px
 .benefits__point2
   top: 67px
-  left: 37.7%
+  left: 28.7%
 .benefits__point3
-  left: 8.4%
+  left: 107px
   top: 350px
 .benefits__title
-  margin-top: 29px
+  margin-top: -10px
   margin-left: 31px
-  margin-bottom: 190px
+  margin-bottom: 115px
   &:before
     display: none
 .benefits__body
-  padding-right: 87px
   margin-bottom: 130px
   display: grid
   grid-template-areas: "manage trans double" "global star exit"
-  grid-row-gap: 101px
+  grid-row-gap: 60px
   grid-template-columns: 34% 33.3% 33.3%
 .benefits__item
-  background-position: 50% 28.5%, 0
+  background-position: 50% 31%, 0
   background-repeat: no-repeat no-repeat
-  height: 726px
-  padding-top: 476px
+  height: 506px
+  padding-top: 330px
   text-align: center
   position: relative
   z-index: 2
-  background-color: #FAFAFA
   transition: all 2s
   //&:hover
   //  background-color: #fff
@@ -66,19 +63,19 @@
     @include pseudo()
     width: 100%
     height: 100%
-    top: 0
+    top: -13px
     left: 0
     background-image: url("/img/dest/motionfilm-component23.png"), url("/img/dest/motionfilm-component23.png")
     background-repeat: no-repeat
     background-position: 100% 55px, 0 55px
-.benefits__item--active
-  &:after
-    @include pseudo()
-    width: 100%
-    height: 100%
-    top: 0
-    left: 0
-    @include bg(0,0,"/img/dest/motionfilm-component24.png")
+//.benefits__item--active
+//  &:after
+//    @include pseudo()
+//    width: 100%
+//    height: 100%
+//    top: 0
+//    left: 0
+//    @include bg(0,0,"/img/dest/motionfilm-component24.png")
 .benefits__item--manage
   background-image: url("/img/dest/motionfilm-management.png")
 .benefits__item--trans
@@ -92,7 +89,7 @@
 .benefits__item--exit
   background-image: url("/img/dest/motionfilm-exit.png")
 .benefits__subtitle
-  @include font($PoppinsB, $f36, #3E4258)
+  @include font($PoppinsB, 28px, #3E4258)
   margin-bottom: 16px
 //.benefits__subtitle--manage
 //  margin-left: 45px
@@ -101,30 +98,26 @@
 //.benefits__subtitle--double
 //  margin-left: 2px
 .benefits__text
-  font-size: 20px
-  line-height: 34px
+  font-size: 17px
+  line-height: 28px
 .benefits__text--manage
-  padding-left: 116px
-  padding-right: 116px
+  padding-left: 60px
+  padding-right: 48px
 .benefits__text--trans
-  padding-left: 132px
-  padding-right: 132px
+  padding-left: 45px
+  padding-right: 42px
 .benefits__text--double
-  padding-left: 48px
-  padding-right: 31px
+  padding-left: 37px
+  padding-right: 50px
 .benefits__text--global
-  padding-left: 154px
-  padding-right: 154px
+  padding-left: 60px
+  padding-right: 48px
 .benefits__text--star
-  padding-left: 108px
-  padding-right: 108px
+  padding-left: 56px
+  padding-right: 49px
 .benefits__text--exit
-  padding-left: 120px
-  padding-right: 120px
-.benefits__video-wrap
-  position: relative
-  margin-left: 92px
-  margin-right: 95px
+  padding-left: 90px
+  padding-right: 90px
   &:after
     //@include pseudo()
     //z-index: 2
@@ -143,8 +136,14 @@
   &:hover:after
     opacity: 0.85
     cursor: pointer
+.benefits__video-wrap
+  width: 100%
 .benefits__video
+  display: block
+  width: 1266px
+  height: 722px
   position: relative
   z-index: 1
   border-radius: 30px
+  margin: 0 auto
 
