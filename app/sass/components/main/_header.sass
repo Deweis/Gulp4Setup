@@ -1,0 +1,217 @@
+header
+  padding-bottom: 167px
+header .container
+  padding-left: 73px
+
+.header__wrap
+  padding-top: 36px
+  color: #0E1131
+  display: flex
+  justify-content: space-between
+  align-items: center
+.header__navigation
+  padding-bottom: 7px
+  font-size: 1rem
+  display: flex
+  align-items: center
+.header__logo
+  padding-top: 5px
+.header__menu
+  display: flex
+.header__item
+  margin-left: 45px
+  font-size: 14px
+  font-weight: 500
+  font-family: $PoppinsM
+  color: #0E1131
+  opacity: 1
+.header__menu .header__item:first-child
+  margin-left: 30px
+.header__link
+  position: relative
+  &:hover
+    opacity: 0.5
+.header__link--is-active:hover
+  opacity: 1
+.header__link--is-active:after
+  content: ''
+  display: block
+  width: 6px
+  height: 6px
+  background: #0056FB
+  border-radius: 50%
+  position: absolute
+  bottom: -10px
+  left: 53%
+  margin-left: -3px
+.header__action-block
+  display: flex
+  font-size: 16px
+  font-family: $PoppinsSB
+  padding-right: 43px
+  text-align: center
+.header__sign-link
+  margin-right: 24px
+.header__act-link
+  display: block
+  padding: 15px 15px 0 15px
+  height: 60px
+.header__act-link:hover
+  background-color: #ECEDFE
+  border-radius: 230px
+  color: #4D4DFB
+//
+.header__mobile-img
+  display: none
+.header__title
+  margin-top: 187px
+  margin-bottom: 44px
+  width: 37.7%
+  line-height: 123%
+  --animation: fadeInLeft
+  --animation-duration: 2s
+  --animation-delay: 0.3s
+.header__subtitle
+  width: 36%
+  line-height: 45px
+  color: $textGray
+.header__subtitle-project
+  font-family: $PoppinsSB
+  color: #000
+  position: relative
+  &:after
+    content: ""
+    display: block
+    width: 100%
+    height: 3px
+    position: absolute
+    left: 0
+    background-image: linear-gradient(to right, rgb(77,77,251) 46%, rgba(77,77,251,0))
+    background-position: bottom
+    background-size: 12px 3px
+    background-repeat: repeat-x
+
+.header__form
+  margin-top: 118px
+  display: grid
+.header__investor
+  width: 677px
+  height: 106px
+  position: relative
+  margin-bottom: 62px
+.header__input
+  border: 1px solid #D5D7E3
+  height: 106px
+  font-size: $f21
+  width: 100%
+  background: #FBFBFF
+  box-shadow: 0px 20px 16px rgba(220, 220, 241, 0.1)
+  border-radius: 10px
+  padding-left: 31px
+  padding-right: 326px
+.header__button
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 316px
+  height: 95px
+  position: absolute
+  top: 5px
+  right: 6px
+  border-radius: 0px 9px 9px 0px
+
+.header__terms
+  color: #000000
+  font-size: $f16
+  display: block
+  position: relative
+  padding-left: 55px
+  margin-bottom: 12px
+  cursor: pointer
+  user-select: none
+  width: 22.3%
+.header__learn-more
+  color: $blue
+  font-family: $PoppinsM
+  text-decoration-line: underline
+.terms__input
+  font-family: $PoppinsR
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+.terms__checkmark
+  position: absolute
+  top: -3px
+  left: 0
+  height: 34px
+  width: 35px
+  background-color: #fff
+  border: 1px solid #D5D7E3
+.terms__checkmark:after
+  content: ""
+  position: absolute
+  display: none
+.header__terms:hover .terms__input ~ .checkmark
+  background: #fff
+.terms__input:checked ~ .terms__checkmark:after
+  display: block
+.terms__input:checked ~ .terms__checkmark
+  background-color: #F9F9FE
+.terms__checkmark:after
+  width: 100%
+  height: 100%
+  background-image: url("/img/dest/motionfilm-checkbox.png")
+  background-repeat: no-repeat
+  background-position-x: 50%
+  background-position-y: 50%
+
+.header__input::placeholder
+  color: #CFCFDF
+  font-size: $f21
+  font-family: $PoppinsM
+
+.header__visual
+  position: absolute
+  left: 821px
+  top: 130px
+  width: 100%
+.header__img
+  display: block
+  position: absolute
+.header__caption
+  position: absolute
+  left: -95px
+  top: 23px
+  width: 278px
+  height: 110px
+  box-shadow: 6px 8px 23px rgba(219, 182, 74, 0.12)
+  border: 1px solid #F7F8FF
+  border-radius: 10px
+  padding-top: 12px
+  background: #fff
+.header__caption-title
+  color: #5e5f75
+  font-size: $f14
+  font-family: $Nunito
+  margin-left: 74px
+.header__caption-text
+  color: #0C1130
+  font-size: $f36
+  font-family: $Heebo
+  margin-top: -1px
+  margin-left: 95px
+.header__caption-icon1
+  position: absolute
+  top: 27px
+  left: 17px
+.header__caption-icon2
+  position: absolute
+  top: 58px
+  left: 74px
+
+.hamburger
+  display: none
+.hamburger-content
+  display: none

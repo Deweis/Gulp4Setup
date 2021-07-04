@@ -1,0 +1,65 @@
+.start .container
+  width: 1276px
+  background: linear-gradient(180deg,#f9f9f9 -3%,rgba(253,254,255,0) 62%)
+  padding: 32px 0 59px
+  overflow: hidden
+.start__title
+  text-align: center
+  padding-top: 26px
+  position: relative
+  font-size: 40px
+  &:before
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    left: 49.7%
+    top: 0
+    position: absolute
+    background-color: $orange
+.start__arrow
+  position: absolute
+  left: 43%
+  top: 15%
+.start__content
+  display: flex
+.start__phone-block
+  position: absolute
+  margin-top: 29px
+  text-transform: capitalize
+  padding-right: 25px
+.start-phone__head
+  background-repeat: no-repeat
+  background-position: 95% 22px
+  background-image: url(/img/dest/motionfilm-checkmark1.png)
+  padding-top: 50px
+  padding-bottom: 15px
+.start-phone__graphic
+  opacity: 0.6
+
+.start__text
+  margin-top: 73px
+  margin-left: 57%
+.start-text__item
+  padding-top: 25px
+  padding-left: 70px
+.start-text__item:first-child
+  @include bg(8px,12px,"/img/dest/motionfilm-select.png")
+  margin-bottom: 50px
+  padding-right: 87px
+.start-text__item:nth-child(2)
+  @include bg(9px,28px,"/img/dest/motionfilm-how-invest.png")
+  margin-bottom: 45px
+  padding-right: 87px
+.start-text__item:last-child
+  @include bg(10px,16px,"/img/dest/motionfilm-how-wait.png")
+  padding-right: 129px
+.start-text__title
+  @include font($PoppinsB, 26px, #3E4258)
+  line-height: 40px
+.start-text__subtitle
+  @include font($PoppinsB, 16px, #5E5F75)
+  line-height: 30px
+.start-text__p
+  @include font($PoppinsM, 14px, #5E5F75)
+  margin-top: 18px
+  line-height: 23px

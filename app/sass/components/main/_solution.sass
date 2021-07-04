@@ -1,0 +1,101 @@
+.solution
+  margin-bottom: 40px
+  .container
+    width: 1814px
+    display: flex
+
+.solution__head
+  position: absolute
+  z-index: 2
+  background: #0056FB
+  width: 751px
+  @include bg(23.5%,486px,"/img/dest/motionfilm-component19.png")
+.solution__title
+  padding: 164px 138px 0 89px
+  height: 1491px
+  color: #fff
+  &:before
+    background: #fff
+.solution__grid
+  position: relative
+  padding-right: 42px
+  padding-top: 72px
+  padding-bottom: 73px
+  display: grid
+  grid-template-areas: "security audit" "product money"
+  margin-left: 445px
+  &:after
+    @include pseudo()
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    background: #FAFAFB
+    z-index: -1
+.solution__card
+  padding: 230px 61px 55px 45px
+  border-radius: 20px
+  width: 647px
+  position: relative
+  z-index: 3
+  overflow: hidden
+  &:after
+    @include pseudo()
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 2
+.solution__card-wrap
+  transition: all 1s
+  position: relative
+  z-index: 4
+.solution__card--security
+  background: #FFF4D8
+  margin-right: 30px
+  margin-bottom: 33px
+  padding-bottom: 30px
+  height: 590px
+  &:after
+    @include bg(20px,29px,"/img/dest/motionfilm-security.png")
+.solution__card--audit
+  &:after
+    @include bg(20px,29px,"/img/dest/motionfilm-audit.png")
+  background: #DCF7F8
+  margin-bottom: 33px
+  height: 641px
+.solution__card--product
+  &:after
+    @include bg(20px,29px,"/img/dest/motionfilm-product.png")
+  margin-right: 30px
+  margin-top: -50px
+  background: #FFF1F2
+  height: 723px
+.solution__card--money
+  padding: 226px 86px 54px 47px
+  height: 620px
+  &:after
+    @include bg(24px,26px,"/img/dest/motionfilm-money.png")
+  background: #F0F5FC
+.solution__subtitle
+  @include font($PoppinsB, $f38, #505A76)
+  margin-bottom: 45px
+.solution__subtitle--product
+  margin-bottom: 68px
+.solution__subtitle--money
+  margin-bottom: 64px
+.solution__list
+  font-size: $f24
+.solution__pros
+  padding-left: 55px
+  @include bg(0,10px,"/img/dest/motionfilm-checkmark6.png")
+  margin-bottom: 30px
+.audit__pros
+  &:first-child
+    margin-bottom: 35px
+.product__pros
+  &:nth-child(2)
+    margin-bottom: 35px
+.money__pros
+  &:nth-child(2)
+    margin-bottom: 37px

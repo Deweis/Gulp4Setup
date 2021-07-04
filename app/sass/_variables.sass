@@ -1,0 +1,43 @@
+$PoppinsR: 'Poppins-Regular', Arial, sans-serif
+$PoppinsM: 'Poppins-Medium', Arial, sans-serif
+$PoppinsSB: 'Poppins-SemiBold', Arial, sans-serif
+$PoppinsB: 'Poppins-Bold', Arial, sans-serif
+$RobotoB: 'Roboto-Bold', Arial, sans-serif
+$Nunito: 'NunitoSans-Bold', Tahoma, sans-serif
+$Heebo: 'Heebo-Bold', Tahoma, sans-serif
+
+$f14: 0.6364rem
+$f16: 0.7273rem
+$f18: 0.8182rem
+$f20: 0.9091rem
+$f21: 0.9545rem
+$f24: 1.091rem
+$f26: 1.182rem
+$f28: 1.273rem
+$f30: 1.364rem
+$f34: 1.545rem
+$f36: 1.636rem
+$f37: 1.682rem
+$f38: 1.727rem
+$f40: 1.818rem
+$f50: 2.273rem
+$f60: 2.727rem
+$f90: 4.091rem
+
+$black: #0C1130
+$textGray: #57596D
+$blue: #0056FB
+$orange: #FFA779
+
+@mixin font($family, $size, $color)
+  font-family: $family
+  color: $color
+  font-size: $size
+@mixin bg($x, $y, $url)
+  background-repeat: no-repeat
+  background-position: $x $y
+  background-image: url($url)
+@mixin pseudo()
+  display: block
+  content: ''
+  position: absolute

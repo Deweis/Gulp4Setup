@@ -1,0 +1,188 @@
+.popup-overlay
+  height: 100%
+  width: 100%
+  position: fixed
+  background-color: rgba(0,0,0,0.8)
+  z-index: 5
+  display: none
+.modal-popup
+  background-color: gray
+  width: 1920px
+  height: 1080px
+  position: fixed
+  left: 50%
+  top: 50%
+  margin-left: -960px
+  margin-top: -540px
+  text-align: center
+  display: none
+  z-index: 7
+
+.modal
+  display: flex
+  height: 100%
+.modal__bg
+  background-color: #23252A
+  width: 1071px
+  position: relative
+  z-index: 1
+.modal__logo
+  position: absolute
+  left: 102px
+  top: 45px
+.modal__text-block
+  padding: 340px 200px
+  background-color: #324ECF
+  height: 955px
+  width: 1122px
+  position: absolute
+  z-index: 2
+  left: 102px
+  top: 125px
+.modal__author
+  position: absolute
+  z-index: 3
+.modal__author--first
+  left: 68px
+  top: 75px
+.modal__author--second
+  left: 173px
+  bottom: 269px
+.modal__author--third
+  right: 208px
+  bottom: 70px
+.modal__author--fourth
+  right: 67px
+  top: 175px
+.modal__points
+  position: absolute
+  bottom: 130px
+  left: 0
+.modal__title
+  @include font($PoppinsB, $f60, #fff)
+.modal__subtitle
+  @include font($PoppinsR, $f18, #9FAEF5)
+.modal__token-block
+  position: absolute
+  width: 229px
+  height: 82px
+  background-color: #fff
+  z-index: 2
+  padding-top: 8px
+  text-align: left
+.modal__token--total
+  top: 184px
+  left: 221px
+  @include bg(6px, 9px, "/img/dest/motionfilm-token.png")
+  background-size: 63px 63px
+  padding-left: 91px
+.modal__token--earn
+  bottom: 50px
+  right: 314px
+  padding-left: 21px
+.modal__token-title
+  @include font($Nunito, $f16, #57596D)
+.modal__token-number
+  @include font($Heebo, $f36, #0C1130)
+
+.modal__action
+  background-color: #fff
+  width: 44%
+  padding: 176px 113px 68px 280px
+.modal__head
+  display: flex
+.modal__tab
+  @include font($PoppinsB, $f30, #A2A6B9)
+.modal__tab:first-child
+  margin-right: 46px
+.modal__tab--active
+  color: #0C1130
+  position: relative
+.modal__tab--active:after
+  @include pseudo()
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background-color: #0C1130
+  position: absolute
+  left: 50%
+  margin-left: -5px
+  margin-top: 4px
+.modal__signup
+  margin-top: 93px
+.modal__google,.modal__input,.modal__button
+  width: 470px
+  height: 80px
+  border-radius: 200px
+.modal__google
+  @include bg(42px,24px, "/img/dest/motionfilm-google.png")
+  @include font($PoppinsSB,$f18,#352D2D)
+  display: block
+  border: 1px solid #EEF3FF
+  box-shadow: 0px 8px 13px #F5F5F5
+  padding-top: 28px
+.modal__mobile-signup
+  display: block
+  @include font($PoppinsSB, $f16, #ABADC9)
+  margin-top: 29px
+  text-decoration-line: underline
+  text-transform: capitalize
+.modal__input
+  background-color: #F9FAFF
+  padding-left: 46px
+  border: 1px solid #EDF2FF
+  font-size: $f18
+.modal__input:focus
+  border: 2px solid #A3A7BD
+  border-radius: 200px
+  outline: none
+.modal__email
+  margin-top: 71px
+  &::placeholder
+    @include font($PoppinsSB, $f18, #454857)
+.modal__phone-wrap
+  margin-top: 27px
+  display: flex
+  position: relative
+  width: 470px
+  height: 80px
+.modal__number
+  padding-left: 216px
+  &::placeholder
+    color: #C1C6DE
+    font-size: $f18
+.modal__phone-code
+  margin-top: 5px
+  margin-left: 46px
+  height: 70px
+  width: 165px
+  position: absolute
+  border: 0
+  appearance: none
+  background-color: #F9FAFF
+  @include font($PoppinsSB, $f18, #454857)
+  &:focus
+    border: none
+    outline: none
+.modal__password
+  margin-top: 27px
+  padding-right: 90px
+  &::placeholder
+    color: #C1C6DE
+    font-size: $f18
+.modal__password-block
+  position: relative
+.modal__toggle-password
+  position: absolute
+  z-index: 6
+  right: 36px
+  top: 50%
+  margin-top: -5.5px
+  cursor: pointer
+.modal__toggle-img
+
+.modal__button
+  margin-top: 80px
+  background-color: #F67D4B
+  border: 1px solid #F97E4C
+  @include font($PoppinsSB, $f26, #fff)

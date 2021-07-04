@@ -1,0 +1,121 @@
+.questions
+  background: #FBFCFF
+  padding-top: 115px
+  margin-top: 20px
+.questions__head
+  width: 540px
+  margin: 0 auto
+  text-align: center
+  position: relative
+  padding-bottom: 62px
+.questions__arrow
+  position: absolute
+  bottom: 13%
+  left: -1%
+.questions__title
+  position: relative
+  z-index: 2
+  margin-bottom: 62px
+  &:before
+    display: none
+.questions__mark
+  background-color: #EDF2FE
+  width: 103px
+  height: 55px
+  position: absolute
+  bottom: 162px
+  right: 96px
+  z-index: 1
+.question__box
+  border: 1px solid #8492AE
+  position: absolute
+  width: 106px
+  height: 43px
+  top: 5px
+  left: 6px
+  @include bg(30px,5px,"/img/dest/motionfilm-questionmark.png")
+.questions__subtitle
+  @include font($PoppinsSB, 20px, #57596D)
+  line-height: 40px
+  text-align: center
+  margin: 0 auto
+  position: relative
+  width: 228px
+  &:after,&:before
+    @include pseudo()
+    width: 31px
+    height: 4px
+    background-color: #C0CCE1
+    top: 48%
+  &:after
+    left: 0
+  &:before
+    right: 0
+.questions__tabs
+  margin-top: 17px
+  margin-left: 134px
+  margin-right: 134px
+.tabs__item
+  height: 91px
+  border: 2px solid #B4C3E0
+  background-color: #F9FBFF
+  padding: 0 0 0 60px
+  border-radius: 14px
+  @include bg(95.3%,50%,"/img/dest/motionfilm-checkmark7.png")
+  transition: 0.4s
+  display: flex
+  .panel
+    align-self: center
+  .tabs__text
+    display: none
+    line-height: 43px
+  &:not(last-child)
+    margin-bottom: 20px
+  .tabs__title
+    margin-bottom: 0
+    padding-right: 150px
+  &:hover
+    opacity: 0.7
+    cursor: pointer
+.tabs__item--active
+  padding: 43px 0 40px 60px
+  background-color: #fff
+  height: auto
+  border: 2px solid rgba(180, 195, 224, 0.41)
+  background-image: url("/img/dest/motionfilm-exit-button.png")
+  background-position: 96.5% 16.5%
+  .tabs__text
+    display: block
+  .tabs__title
+    margin-bottom: 38px
+  &:hover
+    opacity: 1
+.tabs__item[data-tab="two"],
+.tabs__item[data-tab="three"],
+.tabs__item[data-tab="four"]
+  display: none
+.tabs__title
+  @include font($PoppinsSB, 28px, #505A76)
+  line-height: 40px
+.tabs__text
+  font-size: 24px
+  color: #6D7796
+.questions__pagination
+  @include font($RobotoB, 30px, #A0ACC2)
+  margin: 62px 0 43px 35px
+  display: flex
+  justify-content: center
+  align-items: center
+.pagination__item
+  cursor: pointer
+  width: 52px
+  height: 52px
+  display: block
+  padding: 7px 0 0 17px
+  margin-right: 10px
+.pagination__item--active
+  color: #fff
+  border-radius: 50%
+  background-color: #596B8E
+
+//Accordion

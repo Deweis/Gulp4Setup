@@ -1,0 +1,150 @@
+.benefits
+  padding-top: 70px
+  padding-bottom: 90px
+  background: #FAFAFA
+.benefits__head
+  text-align: center
+  position: relative
+.benefits__token-wrap
+  position: relative
+  width: 360px
+  height: 300px
+  margin: 0 auto
+.benefits__img1,.benefits__img2,.benefits__img3,.benefits__img4,.benefits__point1,.benefits__point2,.benefits__point3
+  position: absolute
+.benefits__img1
+  top: 106px
+  left: 79px
+.benefits__img2
+  top: 89px
+  right: 57px
+.benefits__img3
+  top: 136px
+  right: 84px
+.benefits__img4
+  top: 76px
+  right: 1px
+
+.benefits__point1
+  top: 180px
+  right: 236px
+.benefits__point2
+  top: 67px
+  left: 37.7%
+.benefits__point3
+  left: 8.4%
+  top: 350px
+.benefits__title
+  margin-top: 29px
+  margin-left: 31px
+  margin-bottom: 190px
+  &:before
+    display: none
+.benefits__body
+  padding-right: 87px
+  margin-bottom: 130px
+  display: grid
+  grid-template-areas: "manage trans double" "global star exit"
+  grid-row-gap: 101px
+  grid-template-columns: 34% 33.3% 33.3%
+.benefits__item
+  background-position: 50% 28.5%, 0
+  background-repeat: no-repeat no-repeat
+  height: 726px
+  padding-top: 476px
+  text-align: center
+  position: relative
+  z-index: 2
+  background-color: #FAFAFA
+  transition: all 2s
+  //&:hover
+  //  background-color: #fff
+
+
+.benefits__item--trans,.benefits__item--star
+  &:after
+    @include pseudo()
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-image: url("/img/dest/motionfilm-component23.png"), url("/img/dest/motionfilm-component23.png")
+    background-repeat: no-repeat
+    background-position: 100% 55px, 0 55px
+.benefits__item--active
+  &:after
+    @include pseudo()
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    @include bg(0,0,"/img/dest/motionfilm-component24.png")
+.benefits__item--manage
+  background-image: url("/img/dest/motionfilm-management.png")
+.benefits__item--trans
+  background-image: url("/img/dest/motionfilm-transparency2.png")
+.benefits__item--double
+  background-image: url("/img/dest/motionfilm-double-transparency.png")
+.benefits__item--global
+  background-image: url("/img/dest/motionfilm-global-oppurtunity.png")
+.benefits__item--star
+  background-image: url("/img/dest/motionfilm-star-power.png")
+.benefits__item--exit
+  background-image: url("/img/dest/motionfilm-exit.png")
+.benefits__subtitle
+  @include font($PoppinsB, $f36, #3E4258)
+  margin-bottom: 16px
+//.benefits__subtitle--manage
+//  margin-left: 45px
+//.benefits__subtitle--trans
+//  margin-right: 28px
+//.benefits__subtitle--double
+//  margin-left: 2px
+.benefits__text
+  font-size: 20px
+  line-height: 34px
+.benefits__text--manage
+  padding-left: 116px
+  padding-right: 116px
+.benefits__text--trans
+  padding-left: 132px
+  padding-right: 132px
+.benefits__text--double
+  padding-left: 48px
+  padding-right: 31px
+.benefits__text--global
+  padding-left: 154px
+  padding-right: 154px
+.benefits__text--star
+  padding-left: 108px
+  padding-right: 108px
+.benefits__text--exit
+  padding-left: 120px
+  padding-right: 120px
+.benefits__video-wrap
+  position: relative
+  margin-left: 92px
+  margin-right: 95px
+  &:after
+    //@include pseudo()
+    //z-index: 2
+    //width: 119px
+    //height: 119px
+    //top: 50%
+    //left: 50%
+    //margin-left: -60.5px
+    //margin-top: -63.5px
+    //background-color: #fff
+    //background-image: url("/img/dest/motionfilm-polygon2.png")
+    //background-position: 53% 53%
+    //background-repeat: no-repeat
+    //opacity: 1
+    //border-radius: 50%
+  &:hover:after
+    opacity: 0.85
+    cursor: pointer
+.benefits__video
+  position: relative
+  z-index: 1
+  border-radius: 30px
+

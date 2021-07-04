@@ -1,0 +1,225 @@
+.lock
+  @include bg(center, 0%, "/img/dest/motionfilm-background.png")
+  padding-top: 208px
+  padding-bottom: 250px
+  margin-top: 19px
+  .container
+    display: flex
+    padding-left: 144px
+.lock__text-block
+  width: 50%
+  position: relative
+.lock__arrow
+  position: absolute
+  right: 0.5%
+  top: 37%
+.lock__title
+  margin-bottom: 23px
+.lock__subtitle
+  padding-right: 220px
+  line-height: 40px
+  margin-bottom: 187px
+.card-body__global
+  @include bg(0, 0, "/img/dest/motionfilm-global-buyers.png")
+  margin-bottom: 157px
+  padding-right: 265px
+.card-body__fast
+  @include bg(0, 0, "/img/dest/motionfilm-fast-process.png")
+  margin-left: 163px
+  padding-right: 226px
+.lock__pros-text--fast
+  margin-top: 3px
+
+.lock__phone-block
+  margin-top: -89px
+  padding-top: 130px
+  background-position: 0 8px
+.lock-phone__head
+  display: flex
+  justify-content: space-between
+  padding-left: 52px
+  margin-bottom: 46px
+.lock-phone__title-sell
+  @include bg(102px,13px,"/img/dest/motionfilm-checkmark4.png")
+  padding-right: 158px
+.lock-phone__tab-wrap
+  @include font($PoppinsSB, $f30, #7889AF)
+  display: flex
+  position: relative
+  padding-top: 26px
+  padding-right: 22px
+  margin-bottom: 29px
+  &:before, &:after
+    content: ''
+    display: block
+    width: 100%
+    height: 2px
+    background: #E8EEF9
+    position: absolute
+  &:after
+    bottom: 0
+    z-index: -1
+  &:before
+    top: 0
+.lock-phone__tab
+  text-align: center
+  width: 49.5%
+  position: relative
+  color: #B0BACD
+  padding-bottom: 25px
+  &:first-child
+    width: 50.5%
+    margin-left: 9px
+    padding-right: 12px
+.lock-phone__tab--active
+  color: #7889AF
+  &:after
+    content: ''
+    display: block
+    width: 96.5%
+    height: 4px
+    background: #ABB9D9
+    position: absolute
+    bottom: 0
+    z-index: 1
+.lock-phone__result
+  position: relative
+  margin-bottom: 52px
+  &:before
+    content: ''
+    @include bg(0,0,"/img/dest/motionfilm-reload-icon.png")
+    width: 62px
+    height: 62px
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -31px
+    margin-top: -31px
+    z-index: 2
+.lock-phone__wrap
+  position: relative
+  background: #fff
+  padding-top: 20px
+  padding-right: 41px
+  margin-right: 30px
+  margin-left: 29px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-radius: 6px
+  border: 1px solid #E9EFFC
+  &:first-child:after
+    display: block
+    content: ''
+    position: absolute
+    width: 100%
+    height: 0.1px
+    background: #E9EFFC
+    bottom: 0
+  &:first-child
+    padding-bottom: 15px
+  &:nth-child(2)
+    padding-bottom: 18px
+.lock-phone__wrap--value
+  padding-top: 16px
+.lock-phone__output-text
+  @include font($PoppinsSB, $f24, #3E4258)
+  padding-left: 48px
+  font-weight: 600
+.lock-phone__output-number
+  @include font($PoppinsSB, $f34, #3E4258)
+  span
+    color: #B0BACD
+.lock-phone__value-number
+  padding-left: 36px
+  @include bg(0,50%,"/img/dest/motionfilm-component16.png")
+.lock-phone__title
+  @include font($PoppinsM, $f24, #B0BACD)
+  font-weight: 500
+  padding-left: 53px
+.lock-phone__dropdown
+  position: relative
+  @include font($PoppinsSB, $f30, #3E4258)
+  background: #F5F9FF
+  margin: 19px 31px 34px 29px
+  padding: 25px 30px 29px 30px
+  border: 1px solid #E2E9F8
+  border-radius: 6px
+  &:after
+    @include pseudo()
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    @include bg(95.5%,42px,"/img/dest/motionfilm-checkmark5.png")
+.lock-phone__exchange-wrap
+  display: flex
+  justify-content: space-between
+  margin-left: 30px
+  margin-right: 30px
+  margin-bottom: 40px
+  @include bg(50%,75%,"/img/dest/motionfilm-exchange.png")
+.lock-exchange__title
+  padding-left: 23px
+.lock-exchange__text
+  width: 300px
+  height: 100px
+  margin-top: 21px
+  background: #F5F9FF
+
+  border-radius: 6px
+  padding: 31px 0px 12px 30px
+  @include font($RobotoB, $f30, #3E4258)
+.lock-exchange__text--padding
+  padding-left: 58px
+  @include bg(30px,48%,"/img/dest/motionfilm-component10.png")
+.lock-phone__title
+  margin-bottom: 19px
+.lock-phone__sum
+  margin-left: 30px
+  width: 92%
+  height: 108px
+  background: #F5F9FF
+  display: flex
+  padding-left: 30px
+  border-radius: 6px
+  border: 1px solid #ACB6CA
+.lock-sum__t
+  @include font($RobotoB, $f50,#3E4258)
+  padding-top: 25px
+  padding-right: 27px
+.lock-sum__number
+  @include font($RobotoB, $f30,#8D9BB6)
+  padding-top: 37px
+  padding-left: 27px
+  padding-right: 8px
+  position: relative
+  &:before
+    @include pseudo()
+    width: 1px
+    height: 100%
+    background: #E4E9F2
+    left: 0
+    top: 0
+  &:after
+    @include pseudo()
+    width: 2px
+    height: 46px
+    background: #657084
+    right: 0
+    top: 30px
+.lock-sum__inr
+  @include font($RobotoB, $f30,#3E4258)
+  background: #FBFDFF
+  margin: 6px 0 7px 161px
+  padding-top: 30px
+  padding-left: 63px
+  padding-right: 142px
+  position: relative
+  &:after
+    @include pseudo()
+    @include bg(37px,52%,"/img/dest/motionfilm-component10.png")
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
